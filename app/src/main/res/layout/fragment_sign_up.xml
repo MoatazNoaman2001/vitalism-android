@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="signUpVM"
+            type="com.example.livenativerppg.models.startActivity.ui.fragments.signUpFragment.data.viewModel.SignUpVM" />
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/linearColumnleftside"
+        style="@style/groupStylewhite_A700"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/_4sdp"
+        android:gravity="start"
+        android:orientation="vertical">
+
+        <com.example.livenativerppg.models.emr_EMR.ui.CustomMaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:navigationIcon="@mipmap/ios_back_btn" />
+
+
+        <LinearLayout
+            android:id="@+id/linearColumnarrowleft"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearRowarrowleft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/imageRectangleNineteen"
+                    cornerRadius="@{@dimen/_33pxh}"
+                    imageRes="@{@drawable/img_rectangle19}"
+                    android:layout_width="@dimen/_206pxh"
+                    android:layout_height="@dimen/_96pxh"
+                    android:scaleType="fitXY"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_rectangle19" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtSignupnow"
+                style="@style/txtArialboldmt26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_marginEnd="@dimen/_12pxh"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{signUpVM.signUpModel.txtSignupnow}"
+                tools:text="@string/lbl_sign_up_now" />
+
+            <TextView
+                android:id="@+id/txtPleasefillthe"
+                style="@style/txtAbelregular16_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_12pxh"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{signUpVM.signUpModel.txtPleasefillthe}"
+                tools:text="@string/msg_please_fill_the" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="top"
+                android:layout_marginTop="@dimen/_50sdp">
+
+
+                <EditText
+                    android:id="@+id/NameEditText"
+                    style="@style/txtSolidRounded"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:enabled="false"
+                    android:layout_marginHorizontal="@dimen/_2sdp"
+                    android:hint="@{signUpVM.signUpModel.txtGroupTwenty}"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:paddingStart="@dimen/_12pxh"
+                    android:paddingTop="@dimen/_18pxv"
+                    android:paddingBottom="@dimen/_15pxv"
+                    android:singleLine="true"
+                    android:textColor="@color/gray_900"
+                    android:textColorHint="@color/gray_400"
+                    tools:text="@string/name" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/TextInputEmail"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxCornerRadiusBottomEnd="@dimen/_14pxv"
+                    app:boxCornerRadiusBottomStart="@dimen/_14pxv"
+                    app:boxCornerRadiusTopEnd="@dimen/_14pxv"
+                    app:boxCornerRadiusTopStart="@dimen/_14pxv"
+                    android:layout_marginHorizontal="@dimen/_4sdp"
+                    app:boxStrokeWidth="1dp"
+                    app:hintTextColor="@color/blue_A200"
+                    android:hint="Email"
+                    android:textColorHint="@color/gray_900"
+                    app:startIconDrawable="@drawable/baseline_alternate_email_24"
+                    app:startIconTint="@color/blue_A200"
+                    app:hintAnimationEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/txtSolidRounded_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:paddingStart="@dimen/_20pxh"
+                        android:paddingTop="@dimen/_19pxv"
+                        android:paddingBottom="@dimen/_15pxv"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/passwordEditLayout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="6dp"
+                    android:hint="@string/lbl_password"
+                    android:textColorHint="@color/gray_900"
+                    app:boxBackgroundColor="@color/gray_51"
+                    app:boxCornerRadiusBottomEnd="@dimen/_14pxv"
+                    app:boxCornerRadiusBottomStart="@dimen/_14pxv"
+                    app:boxCornerRadiusTopEnd="@dimen/_14pxv"
+                    app:boxCornerRadiusTopStart="@dimen/_14pxv"
+                    app:boxStrokeColor="@color/gray_100"
+                    app:boxStrokeErrorColor="@color/red_600"
+                    app:boxStrokeWidth="1dp"
+                    app:counterEnabled="true"
+                    app:startIconDrawable="@drawable/baseline_lock_person_24"
+                    app:startIconTint="@color/blue_A200"
+                    app:counterTextColor="@color/blue_801"
+                    app:endIconMode="password_toggle"
+                    app:endIconTint="@color/blue_801"
+                    app:helperText="@string/msg_password_must_b"
+                    app:helperTextTextColor="@color/blue_801"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true"
+                    app:hintTextColor="@color/gray_900">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/txtSolidRounded_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/lbl_password"
+                        android:textColor="@color/gray_900" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ConfirmPasswordEditLayout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="6dp"
+                    android:hint="Confirm password"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:textColorHint="@color/gray_900"
+                    app:boxBackgroundColor="@color/gray_51"
+                    app:boxCornerRadiusBottomEnd="@dimen/_14pxv"
+                    app:boxCornerRadiusBottomStart="@dimen/_14pxv"
+                    app:boxCornerRadiusTopEnd="@dimen/_14pxv"
+                    app:boxCornerRadiusTopStart="@dimen/_14pxv"
+                    app:boxStrokeColor="@color/gray_100"
+                    app:boxStrokeErrorColor="@color/red_600"
+                    app:boxStrokeWidth="1dp"
+                    app:counterEnabled="true"
+                    app:startIconDrawable="@drawable/baseline_lock_person_24"
+                    app:startIconTint="@color/blue_A200"
+                    app:counterTextColor="@color/blue_801"
+                    app:endIconMode="password_toggle"
+                    app:endIconTint="@color/blue_801"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true"
+                    app:hintTextColor="@color/gray_900">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/txtSolidRounded_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray_900" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/linearColumnsignUp"
+                    style="@style/groupStylecornerRadius_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_32pxv"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnSignUp"
+                        style="@style/btnSolidRounded_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_20pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingBottom="@dimen/_20pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_sign_up"
+                        android:textAllCaps="false"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.5"
+                        tools:text="@string/lbl_sign_up" />
+
+                    <com.google.android.material.progressindicator.CircularProgressIndicator
+                        android:id="@+id/signingIndecator"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:indeterminate="true"
+                        android:visibility="gone"
+                        app:indicatorColor="@color/teal_700"
+                        app:indicatorDirectionCircular="clockwise"
+                        app:indicatorSize="@dimen/_35sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.5" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</layout>

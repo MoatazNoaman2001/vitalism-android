@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chat_nav_graph"
+    app:startDestination="@id/mainChatFragment">
+
+    <fragment
+        android:id="@+id/mainChatFragment"
+        android:name="com.example.livenativerppg.models.MainChatInterface.ui.MainChatFragment"
+        android:label="chat" />
+</navigation>

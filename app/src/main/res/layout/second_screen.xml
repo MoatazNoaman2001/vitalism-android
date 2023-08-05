@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearColumnleftside"
+            style="@style/groupStylewhite_A700"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearColumnrectanglenineteen"
+                style="@style/groupStylewhite_A700"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageRectangleNineteen"
+                    cornerRadius="@{@dimen/_33pxh}"
+                    imageRes="@{@drawable/img_rectangle19}"
+                    android:layout_width="@dimen/_252pxh"
+                    android:layout_height="@dimen/_112pxh"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="@dimen/_29pxh"
+                    android:layout_marginEnd="@dimen/_29pxh"
+                    android:scaleType="fitXY"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_rectangle19" />
+
+                <TextView
+                    android:id="@+id/txtPickthePerfec"
+                    style="@style/txtInterbold36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_29pxh"
+                    android:layout_marginTop="@dimen/_28pxv"
+                    android:layout_marginEnd="@dimen/_29pxh"
+                    android:gravity="center_horizontal"
+                    android:text="@string/msg_pick_the_perfec"
+                    tools:text="@string/msg_pick_the_perfec" />
+
+                <ImageView
+                    android:id="@+id/imageTwentyOne"
+                    imageRes="@{@drawable/img_21}"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_404pxh"
+                    android:layout_marginTop="@dimen/_8pxv"
+                    android:gravity="start"
+                    android:scaleType="fitXY"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_21" />
+
+                <TextView
+                    android:id="@+id/txtAvoidanylight"
+                    style="@style/txtIntermedium20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_29pxh"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_marginEnd="@dimen/_29pxh"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:text="@string/msg_avoid_any_light"
+                    tools:text="@string/msg_avoid_any_light" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="homeVM"
+            type="com.example.livenativerppg.models.vitalSignSelect.data.viewmodel.HomeVM" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".models.vitalSignSelect.ui.HomeFragment">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_128sdp">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_128sdp"
+                android:id="@+id/upperCollapsingBar"
+                android:transitionName="collapse_toolbar"
+                android:background="@color/light_blue_700"
+                app:contentScrim="@color/blue_800">
+
+                <ImageView
+                    android:id="@+id/imageTexture"
+                    imageRes="@{@drawable/img_texture}"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_340pxh"
+                    android:layout_gravity="start"
+                    android:scaleType="fitXY"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_texture" />
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:paddingHorizontal="8dp">
+
+                </androidx.appcompat.widget.Toolbar>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="4dp"
+                    android:paddingTop="@dimen/_15sdp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="@dimen/_16sdp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/userImageView"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:src="@mipmap/ic_launcher"
+                            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:layout_weight="0.9"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                style="@style/txtInterregular14_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{homeVM.homeModel.txtLanguage}"
+                                tools:text="@string/lbl_hi_welcome" />
+
+                            <TextView
+                                android:id="@+id/userName"
+                                style="@style/txtInterbold16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_9pxv"
+                                android:layout_marginEnd="@dimen/_10pxh"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:text="@{homeVM.homeModel.txtMahmoudAlyosif}"
+                                tools:text="@string/msg_mahmoud_alyosif" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <FrameLayout
+                            android:id="@+id/notificationBtn"
+                            style="@style/groupStylecornerRadius_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="end"
+                                android:layout_weight="0.1"
+                                android:padding="8dp"
+                                app:srcCompat="@drawable/img_alarm" />
+
+                            <View
+                                android:id="@+id/viewEllipse709"
+                                android:layout_width="@dimen/_8pxh"
+                                android:layout_height="@dimen/_8pxh"
+                                android:layout_gravity="top|end"
+                                android:visibility="gone"
+                                android:layout_marginStart="@dimen/_13pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_marginEnd="@dimen/_13pxh"
+                                android:layout_marginBottom="@dimen/_10pxv"
+                                android:background="@drawable/rectangle_bg_red_600_radius_4" />
+                        </FrameLayout>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/searchTextInputLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_16sdp"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:hint="@{homeVM.homeModel.txtSearchOne}"
+                        android:textColorHint="@color/white"
+                        android:transitionName="outsearchInput"
+                        app:boxCornerRadiusBottomEnd="@dimen/_13sdp"
+                        app:boxCornerRadiusBottomStart="@dimen/_13sdp"
+                        app:boxCornerRadiusTopEnd="@dimen/_13sdp"
+                        app:boxCornerRadiusTopStart="@dimen/_13sdp"
+                        app:boxStrokeColor="@color/white"
+                        app:boxStrokeErrorColor="@color/red_A700"
+                        app:boxStrokeWidth="1dp"
+                        app:boxStrokeWidthFocused="1dp"
+                        app:endIconDrawable="@drawable/img_volume"
+                        app:endIconMode="custom"
+                        app:endIconTint="@color/white"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true"
+                        app:startIconDrawable="@drawable/img_search"
+                        app:startIconTint="@color/white"
+                        tools:hint="@string/lbl_search">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:id="@+id/linearRowlanguageOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_26sdp"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtLanguageOne"
+                style="@style/txtInterbold16_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_weight="0.69"
+                android:text="@{homeVM.homeModel.txtLanguageOne}"
+                tools:text="@string/msg_biomarkers_you" />
+
+            <ImageView
+                android:id="@+id/imageRectangleNineteen"
+                cornerRadius="@{@dimen/_33pxh}"
+                imageRes="@{@drawable/img_rectangle19}"
+                android:layout_width="@dimen/_102pxh"
+                android:layout_height="@dimen/_50pxh"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_rectangle19" />
+        </LinearLayout>
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <androidx.appcompat.widget.LinearLayoutCompat
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:layout_height="match_parent">
+               <androidx.recyclerview.widget.RecyclerView
+                   android:id="@+id/fourMainVitalSigns"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginHorizontal="@dimen/_14sdp"
+                   android:layout_marginTop="@dimen/_8sdp"
+                   android:layout_weight="0.6"
+                   itemSpace="@{@dimen/_20pxh}"
+                   app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                   app:spanCount="2"
+                   tools:itemCount="5"
+                   tools:listitem="@layout/row_listfavorite" />
+
+           </androidx.appcompat.widget.LinearLayoutCompat>
+       </ScrollView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

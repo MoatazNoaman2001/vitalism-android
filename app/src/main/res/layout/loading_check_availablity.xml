@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_160sdp"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    android:layout_marginHorizontal="@dimen/_8sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@color/blue_A200"
+        app:contentPadding="@dimen/_9sdp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+        app:srcCompat="@drawable/ic_monitor_heart"
+        app:tint="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_2sdp"
+        android:fontFamily="@font/interbold"
+        android:layout_marginHorizontal="@dimen/_8sdp"
+        android:textSize="@dimen/_19sdp"
+        android:text="checking availability of rppg" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressIndecator"
+        app:indicatorInset="@dimen/_12sdp"
+        android:layout_marginVertical="@dimen/_12sdp"
+        android:indeterminate="true"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

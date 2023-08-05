@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center">
+
+    <FrameLayout
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="wrap_content"
+        android:id="@+id/framelayout"
+        android:scaleX="1"
+        android:scaleY="1">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="14dp"
+            android:layout_marginTop="@dimen/_94sdp"
+            android:id="@+id/additionalLayout"
+            android:visibility="gone"
+            app:cardPreventCornerOverlap="true"
+            app:cardBackgroundColor="@color/blue_A200"
+            android:layout_gravity="bottom|center">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_90sdp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Name"
+                    tools:text="Moataz"
+
+                    android:paddingHorizontal="4dp"
+                    android:textColor="@color/white"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email"
+                    tools:text="Moataz.noaman12@gmail.com"
+                    android:paddingHorizontal="4dp"
+                    android:textColor="@color/white"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/brif"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    tools:text="Native android and algorithm developer in Vitalism"
+                    android:paddingHorizontal="4dp"
+                    android:textColor="@color/white"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/disc"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    tools:text="vitalism is a massive service that will help in solve of a lot of issues and problem in health care just from home, it will not only make it easy to monitor patients health data from home but also help them to recognize how to keep there health well, iam native android developer attended team from the beginning and worked in enhancing neural network algorithms and building new way to measuring vital sign"
+                    android:paddingHorizontal="4dp"
+                    android:textColor="@color/white"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:layout_marginHorizontal="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:gravity="end">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:id="@+id/linkedin"
+                        android:layout_marginEnd="4dp"
+                        app:srcCompat="@drawable/linkedin_icon"/>
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:id="@+id/fb"
+                        app:srcCompat="@drawable/facebook_icon"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_110sdp"
+            android:gravity="center"
+            android:elevation="12dp"
+            android:id="@+id/imglayout"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/circle_background"
+            >
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/img"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                android:src="@drawable/img_rectangle839_123x146"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </FrameLayout>
+
+
+<!--    app:cardBackgroundColor="@color/blue_A200"-->
+<!--    app:cardCornerRadius="@dimen/_14sdp"-->
+<!--    app:cardUseCompatPadding="true"-->
+<!--    app:cardElevation="8dp"-->
+
+</androidx.appcompat.widget.LinearLayoutCompat>

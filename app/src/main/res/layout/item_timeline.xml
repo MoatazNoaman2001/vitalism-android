@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:orientation="horizontal">
+
+    <com.github.vipulasri.timelineview.TimelineView
+        android:id="@+id/timeline"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:endLineColor="@color/blue_A200"
+        app:lineStyle="dash"
+        app:lineWidth="3dp"
+        app:markerInCenter="true"
+        app:markerSize="18dp"
+        app:startLineColor="@color/blue_A200" />
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:id="@+id/cardView"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/gray_100"
+        android:layout_margin="8dp"
+        app:cardElevation="4dp"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginHorizontal="4dp"
+                android:fontFamily="@font/robotoregular"
+                android:id="@+id/dateTextView"
+                tools:text="08:00 AM, 12-Feb-2023"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:id="@+id/maxTxtView"
+                tools:text="Max: 100.0265"
+                android:layout_marginBottom="16dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:id="@+id/meanTxtView"
+                tools:text="Mean: 88.4"
+                android:layout_marginBottom="16dp"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:id="@+id/minTxtView"
+                tools:text="Min: 76.7735"
+                android:layout_marginBottom="16dp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

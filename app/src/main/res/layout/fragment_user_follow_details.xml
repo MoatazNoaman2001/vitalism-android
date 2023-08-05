@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        tools:context=".models.UserFollowedDetails.ui.UserFollowDetailsFragment">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingVertical="@dimen/_8sdp">
+            <com.google.android.material.appbar.MaterialToolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="Info"
+                android:id="@+id/toolbar"
+                app:titleTextColor="@color/blue_A200"
+                app:navigationIconTint="@color/blue_A200"
+                app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_24"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:transitionName="BImg"
+                    android:id="@+id/userImage"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    tools:src="@drawable/app_logo"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/UserName"
+                    android:textColor="@color/blue_A200"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                    app:autoSizeMaxTextSize="@dimen/_36ssp"
+                    app:autoSizeMinTextSize="@dimen/_12ssp"
+                    tools:text="Moataz Noaman"
+                    android:textStyle="bold"
+                    android:transitionName="Bname"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textAlignment="center"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/EmailTextView"
+                    android:textColor="@color/black"
+                    android:transitionName="Bemail"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:autoSizeMaxTextSize="@dimen/_36ssp"
+                    app:autoSizeMinTextSize="@dimen/_12ssp"
+                    tools:text="Moataz.noaman@gmail.com"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:textAlignment="center"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="@dimen/_7sdp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_9sdp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/intermedium"
+                    android:textColor="@color/gray_700"
+                    android:textSize="@dimen/_14ssp"
+                    android:id="@+id/phoneNumber"
+                    tools:text="phone number: +201098518194" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/intermedium"
+                    android:textColor="@color/gray_700"
+                    android:textSize="@dimen/_14ssp"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/location"
+                    tools:text="addr: Egypt Assuit,asyuit" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/intermedium"
+                    android:textColor="@color/gray_700"
+                    android:textSize="@dimen/_14ssp"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/bloodType"
+                    tools:text="booldType: AB+" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/intermedium"
+                    android:textColor="@color/gray_700"
+                    android:textSize="@dimen/_14ssp"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/gender"
+                    tools:text="gender: male" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_8sdp">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hr"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                android:drawableEnd="@drawable/img_arrowright"
+                android:drawableTint="@color/blue_A200"
+                android:drawablePadding="4dp"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:text="vital sign history"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_8sdp">
+            <androidx.compose.ui.platform.ComposeView
+                android:id="@+id/heightComposableView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_8sdp">
+            <androidx.compose.ui.platform.ComposeView
+                android:id="@+id/weightComposableView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

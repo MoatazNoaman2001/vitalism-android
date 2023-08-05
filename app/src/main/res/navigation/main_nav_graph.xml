@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.livenativerppg.models.vitalSignSelect.ui.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailsVitalSignFragment"
+            app:destination="@id/detailsVitalSignFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchMainFragment"
+            app:destination="@id/searchMainFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="com.example.livenativerppg.models.schedule.ui.SchedulesFragment"
+        android:label="fragment_medicine"
+        tools:layout="@layout/fragment_medicine" >
+        <action
+            android:id="@+id/action_medicineFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_scheduleFragment_to_searchMainFragment"
+            app:destination="@id/searchMainFragment" />
+        <action
+            android:id="@+id/action_scheduleFragment_to_addScheduleFragment"
+            app:destination="@id/addScheduleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsVitalSignFragment"
+        android:name="com.example.livenativerppg.models.vitalSignDetails.ui.DetailsVitalSignFragment"
+        android:label="DetailsVitalSignFragment" >
+        <action
+            android:id="@+id/action_detailsVitalSignFragment_to_respiratoryRatePPGFragment"
+            app:destination="@id/respiratoryRatePPGFragment" />
+        <action
+            android:id="@+id/action_detailsVitalSignFragment_to_oxygenSaturationPPGFragment"
+            app:destination="@id/oxygenSaturationPPGFragment" />
+        <action
+            android:id="@+id/action_detailsVitalSignFragment_to_bloodPressurePPGFragment"
+            app:destination="@id/bloodPressurePPGFragment" />
+        <action
+            android:id="@+id/action_detailsVitalSignFragment_to_heartRateProcessingRPPGFragment"
+            app:destination="@id/heartRateProcessingRPPGFragment" />
+        <action
+            android:id="@+id/action_detailsVitalSignFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.livenativerppg.models.profile.ui.ProfileFragment"
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_searchMainFragment"
+            app:destination="@id/searchMainFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_profileImageFragment"
+            app:destination="@id/profileImageFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_EMRListFragment"
+            app:destination="@id/EMRListFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_profileSettingFragment"
+            app:destination="@id/profileSettingFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_peopleIFollowFragment"
+            app:destination="@id/peopleIFollowFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_emrVisualizationFragment"
+            app:destination="@id/emrVisualizationFragment"
+            app:enterAnim="@anim/scale_up_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchMainFragment"
+        android:name="com.example.livenativerppg.models.searchMain.ui.SearchMainFragment"
+        android:label="SearchMainFragment" />
+    <fragment
+        android:id="@+id/respiratoryRatePPGFragment"
+        android:name="com.example.livenativerppg.models.respiratoryRate.ui.RespiratoryRatePPGFragment"
+        android:label="fragment_respiratory_rate_p_p_g"
+        tools:layout="@layout/fragment_respiratory_rate_p_p_g" />
+    <fragment
+        android:id="@+id/oxygenSaturationPPGFragment"
+        android:name="com.example.livenativerppg.models.oxygenSaturationProcessing.ui.OxygenSaturationPPGFragment"
+        android:label="fragment_oxygen_saturation_p_p_g"
+        tools:layout="@layout/fragment_oxygen_saturation_p_p_g" />
+    <fragment
+        android:id="@+id/bloodPressurePPGFragment"
+        android:name="com.example.livenativerppg.models.bloodPressurePPG.ui.BloodPressurePPGFragment"
+        android:label="fragment_blood_pressure_p_p_g"
+        tools:layout="@layout/fragment_blood_pressure_p_p_g" />
+    <fragment
+        android:id="@+id/chatListFragment"
+        android:name="com.example.livenativerppg.models.chatPeopleList.ui.ChatListFragment"
+        android:label="Chat List"
+        tools:layout="@layout/fragment_chat_list" >
+        <argument
+            android:name="partnerID"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_chatListFragment_to_chatActivity"
+            app:destination="@id/chatActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileImageFragment"
+        android:name="com.example.livenativerppg.models.profile.ui.ProfileImageFragment"
+        android:label="ProfileImageFragment" />
+    <fragment
+        android:id="@+id/EMRListFragment"
+        android:name="com.example.livenativerppg.models.emr_EMR.ui.EMRListFragment"
+        android:label="EMRListFragment" />
+    <fragment
+        android:id="@+id/profileSettingFragment"
+        android:name="com.example.livenativerppg.models.setting.ui.ProfileSettingFragment"
+        android:label="ProfileSettingFragment" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.livenativerppg.models.editProfile.ui.EditProfileFragment"
+        android:label="EditProfileFragment" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_profileImageFragment"
+            app:destination="@id/profileImageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/heartRateProcessingRPPGFragment"
+        android:name="com.example.livenativerppg.models.heartRateProcessing.ui.HeartRateProcessingRPPGFragment"
+        android:label="HeartRateProcessingRPPGFragment" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.example.livenativerppg.models.notification.ui.NotificationFragment"
+        android:label="NotificationFragment" >
+        <action
+            android:id="@+id/action_notificationFragment_to_notificationDetailsFragment"
+            app:destination="@id/notificationDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.livenativerppg.models.aboutAndContribution.ui.AboutFragment"
+        android:label="AboutFragment" />
+    <fragment
+        android:id="@+id/addScheduleFragment"
+        android:name="com.example.livenativerppg.models.schedule.ui.AddScheduleFragment"
+        android:label="AddScheduleFragment" />
+    <fragment
+        android:id="@+id/notificationDetailsFragment"
+        android:name="com.example.livenativerppg.models.notification.ui.NotificationDetailsFragment"
+        android:label="NotificationDetailsFragment" />
+    <fragment
+        android:id="@+id/peopleIFollowFragment"
+        android:name="com.example.livenativerppg.models.follow.ui.PeopleIFollowFragment"
+        android:label="PeopleIFollowFragment" >
+        <action
+            android:id="@+id/action_peopleIFollowFragment_to_userFollowDetailsFragment"
+            app:destination="@id/userFollowDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userFollowDetailsFragment"
+        android:name="com.example.livenativerppg.models.UserFollowedDetails.ui.UserFollowDetailsFragment"
+        android:label="UserFollowDetailsFragment" >
+        <action
+            android:id="@+id/action_userFollowDetailsFragment_to_EMRListFragment"
+            app:destination="@id/EMRListFragment" />
+        <action
+            android:id="@+id/action_userFollowDetailsFragment_to_userFollowEMRListFrgament"
+            app:destination="@id/userFollowEMRListFrgament" />
+    </fragment>
+    <fragment
+        android:id="@+id/userFollowEMRListFrgament"
+        android:name="com.example.livenativerppg.models.UserFollowedDetails.ui.UserFollowEMRListFrgament"
+        android:label="UserFollowEMRListFrgament" />
+    <activity
+        android:id="@+id/chatActivity"
+        android:name="com.example.livenativerppg.models.Chat.ui.ChatActivity"
+        android:label="activity_chat"
+        tools:layout="@layout/activity_chat" />
+    <fragment
+        android:id="@+id/emrVisualizationFragment"
+        android:name="com.example.livenativerppg.models.emrVitualize.ui.EmrVisualizationFragment"
+        android:label="EmrVisualizationFragment" />
+</navigation>

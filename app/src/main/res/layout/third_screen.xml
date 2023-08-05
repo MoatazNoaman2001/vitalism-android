@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearColumnleftside"
+            style="@style/groupStylewhite_A700"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5">
+
+            <LinearLayout
+                android:id="@+id/linearColumnrectanglenineteen"
+                style="@style/groupStylewhite_A700"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageRectangleNineteen"
+                    cornerRadius="@{@dimen/_33pxh}"
+                    imageRes="@{@drawable/img_rectangle19}"
+                    android:layout_width="@dimen/_252pxh"
+                    android:layout_height="@dimen/_112pxh"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="@dimen/_11pxh"
+                    android:layout_marginEnd="@dimen/_11pxh"
+                    android:scaleType="fitXY"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_rectangle19" />
+
+                <TextView
+                    android:id="@+id/txtAdjustyourfac"
+                    style="@style/txtInterbold36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_11pxh"
+                    android:layout_marginTop="@dimen/_28pxv"
+                    android:layout_marginEnd="@dimen/_11pxh"
+                    android:gravity="center_horizontal"
+                    android:text="@string/msg_adjust_your_fac"
+                    tools:text="@string/msg_adjust_your_fac" />
+
+                <ImageView
+                    android:id="@+id/imageFacialIDrecog"
+                    imageRes="@{@drawable/img_facialidrecog}"
+                    android:layout_width="@dimen/_224pxh"
+                    android:layout_height="@dimen/_362pxh"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="@dimen/_11pxh"
+                    android:layout_marginTop="@dimen/_32pxv"
+                    android:layout_marginEnd="@dimen/_11pxh"
+                    android:scaleType="fitXY"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_facialidrecog" />
+
+                <TextView
+                    android:id="@+id/txtDescription"
+                    style="@style/txtIntermedium20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_11pxh"
+                    android:layout_marginTop="@dimen/_15pxv"
+                    android:layout_marginEnd="@dimen/_11pxh"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:text="@string/msg_simply_position"
+                    tools:text="@string/msg_simply_position" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

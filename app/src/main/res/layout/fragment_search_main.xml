@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="searchVM"
+            type="com.example.livenativerppg.models.searchMain.data.viewmodel.SearchVM" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".models.searchMain.ui.SearchMainFragment">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_7pxh">
+
+            <LinearLayout
+                android:id="@+id/linearRowellipse674"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/frameArrow"
+                    android:layout_width="@dimen/_49pxh"
+                    android:layout_height="@dimen/_44pxv">
+
+                    <View
+                        android:id="@+id/viewEllipse674"
+                        android:layout_width="@dimen/_49pxh"
+                        android:layout_height="@dimen/_44pxv"
+                        android:layout_gravity="start"
+                        android:background="@drawable/rectangle_bg_gray_100_radius_24_955" />
+
+                    <ImageView
+                        android:id="@+id/imageArrowleft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_21pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_marginEnd="@dimen/_21pxh"
+                        android:layout_marginBottom="@dimen/_16pxv"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_arrowleft"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_arrowleft" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/txtSearchforVita"
+                    style="@style/txtArialboldmt18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_28pxh"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_marginBottom="@dimen/_13pxv"
+                    android:layout_weight="0.68"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    android:text="@{searchVM.searchModel.txtSearchforVita}"
+                    tools:text="@string/msg_search_for_vita" />
+
+                <TextView
+                    android:id="@+id/txtCancel"
+                    style="@style/txtArialboldmt16_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_29pxh"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_marginBottom="@dimen/_13pxv"
+                    android:layout_weight="0.16"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    android:text="@{searchVM.searchModel.txtCancel}"
+                    tools:text="@string/lbl_cancel" />
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/searchInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:autofillHints="emailAddress"
+            android:hint="@string/lbl_user_name2"
+            android:textColorHint="@color/gray_500"
+            android:transitionName="searchInput"
+            app:boxBackgroundColor="@color/gray_100"
+            app:boxCornerRadiusBottomEnd="@dimen/_14sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_14sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_14sdp"
+            app:boxCornerRadiusTopStart="@dimen/_14sdp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:endIconDrawable="@drawable/img_microphone"
+            app:endIconMode="custom"
+            app:endIconTint="@color/gray_500"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/gray_500"
+            app:startIconDrawable="@drawable/img_search_bluegray_400"
+            app:startIconTint="@color/gray_500">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:id="@+id/TabLayout"
+            android:layout_marginHorizontal="4dp"
+            android:layout_height="wrap_content">
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/userTab"
+                android:text="@string/users"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/emrTab"
+                android:text="@string/emr"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/SearchViewPager"
+            android:orientation="horizontal"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_24sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtSuggested"
+                style="@style/txtArialboldmt20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_weight="0.2"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{searchVM.searchModel.txtSuggested}"
+                tools:text="Founded" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageRectangleNineteen"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_36pxh"
+                android:layout_gravity="end"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_weight="0.6"
+                android:src="@drawable/img_rectangle19"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_rectangle19" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

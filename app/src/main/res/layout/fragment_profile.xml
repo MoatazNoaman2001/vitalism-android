@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="profileVM"
+            type="com.example.livenativerppg.models.profile.data.viewModel.ProfileVM" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".models.profile.ui.ProfileFragment">
+
+        <com.example.livenativerppg.models.emr_EMR.ui.CustomMaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            app:title="@{profileVM.profileModel.txtProfile}"
+            app:titleTextAppearance="@style/txtArialboldmt24"
+            tools:title="@string/lbl_profile"
+            app:titleTextColor="@color/blue_A200"
+            android:layout_marginStart="@dimen/_8sdp"
+            app:navigationIcon="@mipmap/ios_back_btn_blue"
+            android:overScrollMode="ifContentScrolls"
+            app:menu="@menu/profile_menu"
+            app:titleCentered="true"
+            android:layout_height="wrap_content">
+
+        </com.example.livenativerppg.models.emr_EMR.ui.CustomMaterialToolbar>
+
+        <ImageView
+            android:id="@+id/imageRectangleNineteen"
+            imageRes="@{@drawable/img_rectangle19}"
+            android:layout_width="@dimen/_166pxh"
+            android:layout_height="@dimen/_79pxh"
+            android:layout_gravity="top|center"
+            android:layout_marginStart="@dimen/_106pxh"
+            android:layout_marginEnd="@dimen/_106pxh"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_rectangle19" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_4sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/profileImg"
+                android:layout_width="@dimen/_62sdp"
+                android:layout_height="@dimen/_62sdp"
+                android:layout_margin="2dp"
+                android:transitionName="profile_img_small"
+                tools:src="@drawable/img_handsomeconfid" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtMahmoudSayedY"
+                    style="@style/txtArialboldmt19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    android:text="@{profileVM.profileModel.txtMahmoudSayedY}"
+                    tools:text="@string/msg_mahmoud_sayed_y" />
+
+                <TextView
+                    android:id="@+id/txtMahmoudAlyosifyOne"
+                    style="@style/txtAbelregular20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    android:text="@{profileVM.profileModel.txtMahmoudAlyosifyOne}"
+                    tools:text="@string/lbl_mahmoudalyosify2" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <LinearLayout
+            android:id="@+id/linearColumnellipsetwentytwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_marginHorizontal="@dimen/_26sdp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/frameStacklastheartrate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_124sdp"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/_11pxv">
+
+                <LinearLayout
+                    android:id="@+id/linearColumnrectangle841"
+                    style="@style/groupStylegray_100_7fcornerRadius"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_62sdp"
+                    android:layout_gravity="top|start"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linearRowlastheartrate"
+                        style="@style/groupStylecornerRadius_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_7pxh"
+                        android:layout_marginEnd="@dimen/_11pxh"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/linearColumnlastheartrate"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.24"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtLastHeartrate"
+                                style="@style/txtArialboldmt14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:letterSpacing="0.03"
+                                android:lineSpacingExtra="@dimen/_2pxh"
+                                android:text="@{profileVM.profileModel.txtLastHeartrate}"
+                                tools:text="@string/lbl_last_heart_rate" />
+
+                            <TextView
+                                android:id="@+id/hrValueTextView"
+                                style="@style/txtArialboldmt16_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:ellipsize="end"
+                                android:letterSpacing="0.03"
+                                android:lineSpacingExtra="@dimen/_1pxh"
+                                android:singleLine="true"
+                                android:text="@{profileVM.profileModel.txtNone}"
+                                tools:text="@string/lbl_87" />
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/lineRectangle841"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_84pxv"
+                            android:layout_weight="0.01"
+                            android:background="@drawable/rectangle_bg_blue_800_33" />
+
+                        <LinearLayout
+                            android:id="@+id/linearColumnlastrespirator"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.27"
+                            android:paddingStart="2dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtLastRespirator"
+                                style="@style/txtArialboldmt14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:letterSpacing="0.03"
+                                android:lineSpacingExtra="@dimen/_2pxh"
+                                android:text="@{profileVM.profileModel.txtLastRespirator}"
+                                tools:text="@string/msg_last_respirator2" />
+
+                            <TextView
+                                android:id="@+id/txtTwenty"
+                                style="@style/txtArialboldmt16_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:ellipsize="end"
+                                android:letterSpacing="0.03"
+                                android:lineSpacingExtra="@dimen/_1pxh"
+                                android:singleLine="true"
+                                android:text="@{profileVM.profileModel.txtNone}"
+                                tools:text="@string/lbl_20" />
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/lineRectangle840"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_84pxv"
+                            android:layout_marginStart="@dimen/_5pxh"
+                            android:layout_weight="0.01"
+                            android:background="@drawable/rectangle_bg_blue_800_33" />
+
+                        <LinearLayout
+                            android:id="@+id/linearColumnheartratevari"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.24"
+                            android:paddingStart="2dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtHeartratevari"
+                                style="@style/txtArialboldmt14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:letterSpacing="0.03"
+                                android:lineSpacingExtra="@dimen/_2pxh"
+                                android:text="@{profileVM.profileModel.txtHeartratevari}"
+                                tools:text="@string/msg_heart_rate_vari3" />
+
+                            <TextView
+                                android:id="@+id/txtSixty"
+                                style="@style/txtArialboldmt16_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginStart="@dimen/_26pxh"
+                                android:layout_marginTop="@dimen/_7pxv"
+                                android:layout_marginEnd="@dimen/_26pxh"
+                                android:ellipsize="end"
+                                android:letterSpacing="0.03"
+                                android:lineSpacingExtra="@dimen/_1pxh"
+                                android:singleLine="true"
+                                android:text="@{profileVM.profileModel.txtNone}"
+                                tools:text="@string/lbl_60" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearColumnrectangle841One"
+                    style="@style/groupStylegray_100_8ccornerRadius"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_62sdp"
+                    android:layout_gravity="bottom|start"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/frameStackoxygensaturati"
+                        style="@style/groupStylecornerRadius_3"
+                        android:layout_width="@dimen/_369pxh"
+                        android:layout_height="@dimen/_88pxv"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="@dimen/_7pxh"
+                        android:layout_marginEnd="@dimen/_7pxh">
+
+                        <LinearLayout
+                            android:id="@+id/linearRow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/linearRowoxygensaturati"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.397"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/linearColumnoxygensaturati"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.22"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txtOxygenSaturati"
+                                        style="@style/txtArialboldmt14"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textAlignment="center"
+                                        android:letterSpacing="0.03"
+                                        android:lineSpacingExtra="@dimen/_2pxh"
+                                        android:text="@{profileVM.profileModel.txtOxygenSaturati}"
+                                        tools:text="@string/msg_oxygen_saturati" />
+
+                                    <TextView
+                                        android:id="@+id/spo2ValueTextView"
+                                        style="@style/txtArialboldmt16_2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/_2sdp"
+                                        android:ellipsize="end"
+                                        android:letterSpacing="0.03"
+                                        android:lineSpacingExtra="@dimen/_1pxh"
+                                        android:singleLine="true"
+                                        android:text="@{profileVM.profileModel.txtNone}"
+                                        tools:text="@string/lbl_97" />
+                                </LinearLayout>
+
+                                <View
+                                    android:id="@+id/lineRectangle841One"
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/_88pxv"
+                                    android:layout_weight="0.01"
+                                    android:background="@drawable/rectangle_bg_blue_800_33" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearRowprq"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.804"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/linearColumnprq"
+                                    android:layout_width="@dimen/_50sdp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.05"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txtPRQ"
+                                        style="@style/txtArialboldmt14"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ellipsize="end"
+                                        android:textAlignment="center"
+                                        android:letterSpacing="0.03"
+                                        android:lineSpacingExtra="@dimen/_1pxh"
+                                        android:singleLine="true"
+                                        android:text="@{profileVM.profileModel.txtPRQ}"
+                                        tools:text="@string/lbl_prq" />
+
+                                    <TextView
+                                        android:id="@+id/txtNone"
+                                        style="@style/txtArialboldmt16_2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ellipsize="end"
+                                        android:textAlignment="center"
+                                        android:letterSpacing="0.03"
+                                        android:lineSpacingExtra="@dimen/_1pxh"
+                                        android:singleLine="true"
+                                        android:text="@{profileVM.profileModel.txtNone}"
+                                        tools:text="@string/lbl_none" />
+                                </LinearLayout>
+
+                                <View
+                                    android:id="@+id/lineRectangle840One"
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/_88pxv"
+                                    android:layout_marginStart="@dimen/_45pxh"
+                                    android:layout_weight="0.03"
+                                    android:background="@drawable/rectangle_bg_blue_800_33" />
+
+                                <LinearLayout
+                                    android:id="@+id/linearColumnbloodpressure"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.74"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txtBloodPressure"
+                                        style="@style/txtArialboldmt14"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textAlignment="center"
+                                        android:letterSpacing="0.03"
+                                        android:lineSpacingExtra="@dimen/_2pxh"
+                                        android:text="@{profileVM.profileModel.txtBloodPressure}"
+                                        tools:text="@string/lbl_blood_pressure" />
+
+                                    <TextView
+                                        android:id="@+id/BpValueTextView"
+                                        style="@style/txtArialboldmt16_2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/_2sdp"
+                                        android:ellipsize="end"
+                                        android:gravity="center_horizontal"
+                                        android:letterSpacing="0.03"
+                                        android:lineSpacingExtra="@dimen/_1pxh"
+                                        android:singleLine="true"
+                                        android:text="@{profileVM.profileModel.txtNoneOne}"
+                                        tools:text="@string/lbl_none" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/lineRectangle842"
+                    android:layout_width="@dimen/_369pxh"
+                    android:layout_height="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:background="@drawable/rectangle_bg_blue_800_33" />
+            </FrameLayout>
+        </LinearLayout>
+
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/topGridRecycleView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/_124sdp"-->
+<!--            android:layout_marginHorizontal="@dimen/_29sdp"-->
+<!--            android:layout_marginTop="@dimen/_8sdp"-->
+<!--            android:background="#F5FBFF"-->
+<!--            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"-->
+<!--            app:spanCount="3"-->
+<!--            tools:itemCount="6" />-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/utilsExpandableListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_24sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="vertical"
+            tools:listitem="@layout/expandable_profile_list_item"
+            android:layout_marginBottom="@dimen/_4sdp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

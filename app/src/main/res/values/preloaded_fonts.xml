@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/archivo_bold</item>
+        <item>@font/arial</item>
+        <item>@font/arimo_bold</item>
+        <item>@font/big_shoulders_display_thin</item>
+        <item>@font/encode_sans_extralight</item>
+        <item>@font/encode_sans_thin</item>
+        <item>@font/roboto_black</item>
+    </array>
+</resources>

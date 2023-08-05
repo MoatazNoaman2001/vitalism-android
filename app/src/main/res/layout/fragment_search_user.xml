@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="searchUserVM"
+            type="com.example.livenativerppg.models.searchMain.data.viewmodel.SearchVM" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        tools:context=".models.searchMain.ui.SearchUserFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/searchResultRecycleView"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            tools:listitem="@layout/search_recycle_item" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/demoWindow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_24sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieIcon"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/search_peaple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/DemoWindowTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:fontFamily="@font/robotomedium"
+                android:text="@string/type_in_the_search_bar_for_search"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textColor="@color/blue_A200" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </FrameLayout>
+
+</layout>

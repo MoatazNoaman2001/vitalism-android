@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="listfavoriteRowModel"
+            type="com.example.livenativerppg.models.vitalSignSelect.data.model.ListfavoriteRowModel" />
+    </data>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_160sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            android:layout_marginHorizontal="4dp"
+            app:cardElevation="8dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="@color/gray_200"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/img"
+                    android:transitionName="small_img"
+                    android:src="@drawable/img_heartratemin" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtTitle"
+                    style="@style/txtIntermedium14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:ellipsize="end"
+                    android:transitionName="small_title"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    android:text="@{listfavoriteRowModel.txtHeartRate}"
+                    tools:text="@string/lbl_heart_rate" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtSubTitle"
+                    style="@style/txtIntermedium8"
+                    android:transitionName="small_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8pxh"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_marginEnd="@dimen/_11pxh"
+                    android:layout_marginBottom="@dimen/_8pxv"
+                    android:gravity="center_horizontal"
+                    android:text="@{listfavoriteRowModel.txtAnormalrestin}"
+                    tools:text="@string/msg_a_normal_restin" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".models.mainAppPage.ui.MainAppPageActivity">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/searchFapBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/img_search_gray_200"
+        app:fabCustomSize="@dimen/_46sdp"
+        app:backgroundTint="@color/light_blue_700"
+        app:layout_anchor="@id/bottomBar"
+        app:tint="@color/white"
+        android:focusable="true"
+        android:clickable="true"
+        android:contentDescription="@string/fabmain" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            android:id="@+id/rootContainerView">
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView2"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/main_nav_graph" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:fabAlignmentMode="center"
+        app:fabAnchorMode="cradle"
+        app:fabAnimationMode="scale"
+        app:fabCradleMargin="12dp"
+        app:fabCradleRoundedCornerRadius="24dp"
+        app:fabCradleVerticalOffset="8dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemIconTint="#B0C6FF"
+            app:itemRippleColor="#BECCF1"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/main_nav_menu" />
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

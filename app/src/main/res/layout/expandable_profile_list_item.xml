@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_60sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/expandableTexView"
+        style="@style/txtAbelregular16"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/_4sdp"
+        android:gravity="center_vertical"
+        android:layout_weight="0.88"
+        android:ellipsize="end"
+        app:drawableStartCompat="@drawable/img_reply"
+        android:drawablePadding="4dp"
+        app:drawableEndCompat="@drawable/img_arrowright"
+        android:drawableTint="@color/gray_500"
+        android:letterSpacing="0.03"
+        android:lineSpacingExtra="@dimen/_1pxh"
+        android:singleLine="true"
+        android:text="@{profileVM.profileModel.txtPreviousmeasur}"
+        tools:text="@string/msg_previous_measur" />
+</androidx.appcompat.widget.LinearLayoutCompat>

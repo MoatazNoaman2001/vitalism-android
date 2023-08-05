@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1016766472347",
+    "project_id": "vitalism-solution",
+    "storage_bucket": "vitalism-solution.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016766472347:android:9600b92ae9925cdbbae63e",
+        "android_client_info": {
+          "package_name": "com.example.livenativerppg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1016766472347-oeiq4aqa8i0n0k5m48ucrmpgbabdhmfh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.livenativerppg",
+            "certificate_hash": "6f2417845be7e51495c7401c6bc9700cdb619a96"
+          }
+        },
+        {
+          "client_id": "1016766472347-uglj539kv87cc3ere5onqr02uce5g7m2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9Ae5n2ohqlRCSx7F6CNSGHurBnPcZiko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1016766472347-93gncjiet2nuesmee4ev9ja8er948dpu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

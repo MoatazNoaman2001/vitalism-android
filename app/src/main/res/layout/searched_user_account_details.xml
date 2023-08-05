@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/_24sdp"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:paddingVertical="@dimen/_8sdp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_105sdp"
+            android:layout_height="@dimen/_105sdp"
+            android:id="@+id/userImage"
+            tools:src="@mipmap/ic_launcher_round"
+            android:scaleType="fitXY"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Moataz"
+            android:textStyle="bold"
+            android:id="@+id/UserName"
+            android:fontFamily="@font/mulish"
+            android:textSize="@dimen/_15ssp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_9ssp"
+            android:id="@+id/Uid"
+            tools:text="id:1a321sdf31asd1f32132sdf1"
+            android:fontFamily="@font/inter"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/discription"
+            android:fontFamily="@font/intersemibold"
+            android:textAlignment="center"
+            tools:text="Just android developer and in Love with Holy quran"/>
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginVertical="@dimen/_14sdp"
+            android:background="@drawable/rectangle_bg_blue_a401_radius_12" >
+            <LinearLayout
+                android:id="@+id/hightLayout"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_margin="@dimen/_8sdp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/heightTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="@color/white"
+                    app:fontFamily="@font/roboto_black"
+                    tools:text="178 cm" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/heightLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_10ssp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/white"
+                    app:fontFamily="@font/robotoregular"
+                    android:text="height" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ageLayout"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ageTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="@color/white"
+                    app:fontFamily="@font/roboto_black"
+                    tools:text="21" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ageLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_10ssp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/white"
+                    app:fontFamily="@font/robotoregular"
+                    android:text="age" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/weightLayout"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/weightTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="@color/white"
+                    app:fontFamily="@font/roboto_black"
+                    tools:text="84 KG" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/weightLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_10ssp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/white"
+                    app:fontFamily="@font/robotoregular"
+                    android:text="weight" />
+            </LinearLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:id="@+id/BtnLayout"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/partnerfollowmeText"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:layout_marginVertical="@dimen/_4sdp"
+                android:fontFamily="@font/intermedium"
+                tools:text="this person  is in follow with you would you like to follow him"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/FollowBackBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="connect"
+                    android:layout_marginEnd="4dp"
+                    app:backgroundTint="@color/blue_A400"
+                    app:cornerRadius="8dp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="8dp"
+                    android:indeterminate="true"
+                    android:visibility="gone"
+                    android:id="@+id/progressFollow"
+                    app:layout_constraintBottom_toBottomOf="@id/FollowBackBtn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/FollowBackBtn"
+                    app:layout_constraintVertical_bias="0.5" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/connectBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="connect"
+                    android:layout_marginEnd="4dp"
+                    app:backgroundTint="@color/blue_A400"
+                    app:cornerRadius="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="8dp"
+                    android:indeterminate="true"
+                    android:visibility="gone"
+                    android:id="@+id/ConnectionSentProgress"
+                    app:layout_constraintBottom_toBottomOf="@id/connectBtn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/connectBtn"
+                    app:layout_constraintVertical_bias="0.5" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/rejectBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reject"
+                    app:backgroundTint="@color/red_600"
+                    app:cornerRadius="8dp"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:layout_marginStart="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="8dp"
+                    android:indeterminate="true"
+                    android:visibility="gone"
+                    android:id="@+id/RejectSentProgress"
+                    app:layout_constraintBottom_toBottomOf="@id/rejectBtn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/rejectBtn"
+                    app:layout_constraintVertical_bias="0.5" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

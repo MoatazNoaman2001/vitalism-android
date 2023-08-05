@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".models.aboutAndContribution.ui.AboutFragment">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:layout_height="@dimen/_300sdp">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vitalism Solution"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue_A200" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vitalism Solution is a very big services which is concerned providing medical care solutions for people around world is solutions will help poor people and disabled or even help normal people to follow there health conditions and make sure every thing goes right"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold"
+                    android:textColor="@color/gray_700" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_14sdp"
+                android:text="@string/contribue"
+                android:textAlignment="center"
+                android:textSize="@dimen/_28ssp"
+                android:fontFamily="@font/interbold"
+                android:textColor="@color/blue_A400"
+                />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/TeamViewPager"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/_76sdp"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+</layout>

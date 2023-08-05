@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="detailsVM"
+            type="com.example.livenativerppg.models.vitalSignDetails.data.viewmodel.DetailsVM" />
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".models.vitalSignDetails.ui.DetailsVitalSignFragment">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_250sdp">
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:titleCollapseMode="scale"
+                app:contentScrim="@color/blue_800"
+                app:title="Heart Rate"
+                app:layout_insetEdge="top"
+                app:toolbarId="@id/toolbar"
+                app:layout_scrollFlags="scroll|enterAlways|exitUntilCollapsed"
+                app:layout_scrollInterpolator="@android:anim/decelerate_interpolator"
+                app:scrimAnimationDuration="400"
+                app:titleEnabled="true" >
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/backImg"
+                    android:scaleType="centerCrop"
+                    android:transitionName="big_img"
+                    android:src="@drawable/img_rectangle818"
+                    tools:src="@drawable/img_rectangle818"/>
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/toolbar"
+                    app:layout_collapseMode="pin"
+                    android:layout_width="match_parent"
+                    android:theme="@style/ThemeOverlay.MaterialComponents.Toolbar.Primary"
+                    android:layout_height="@dimen/_70sdp">
+                    <LinearLayout
+                        android:id="@+id/linearRowarrowleft"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_28pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <ImageButton
+                            android:background="@drawable/rectangle_bg_black_900_68_radius_25_225"
+                            android:id="@+id/btnArrowleft"
+                            android:layout_height="@dimen/_49pxh"
+                            android:layout_width="@dimen/_50pxh"
+                            android:paddingHorizontal="@dimen/_18pxh"
+                            android:paddingVertical="@dimen/_18pxv"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_arrowleft_white_a700" tools:ignore="ContentDescription"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtDetails"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_17pxv"
+                            android:layout_marginStart="@dimen/_112pxh"
+                            android:layout_marginTop="@dimen/_14pxv"
+                            android:layout_weight="0.36"
+                            android:layout_width="0dp"
+                            android:lineSpacingExtra="@dimen/_1pxh"
+                            android:singleLine="true"
+                            android:text="@{detailsVM.detailsModel.txtDetails}"
+                            style="@style/txtArialboldmt18_2" tools:text="@string/lbl_details"/>
+                        <ImageButton
+                            android:background="@drawable/rectangle_bg_black_900_68_radius_25_225"
+                            android:id="@+id/btnRectangle815"
+                            android:layout_height="@dimen/_49pxh"
+                            android:layout_marginStart="@dimen/_113pxh"
+                            android:layout_width="@dimen/_50pxh"
+                            android:paddingHorizontal="@dimen/_14pxh"
+                            android:paddingVertical="@dimen/_14pxv"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_rectangle815" tools:ignore="ContentDescription"/>
+                    </LinearLayout>
+                </com.google.android.material.appbar.MaterialToolbar>
+
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/frameStackrectanglefourteen"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_518pxv"
+                android:layout_marginBottom="@dimen/_64sdp"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/_10pxv">
+                <LinearLayout
+                    android:id="@+id/linearColumnheartrate"
+                    style="@style/groupStylecornerRadius_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_23pxh"
+                    android:layout_marginEnd="@dimen/_20pxh"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linearRowrectanglenineteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/linearRowheartrate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_6pxv"
+                            android:layout_weight="0.69"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtHeartRate"
+                                style="@style/txtArialboldmt24"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_22pxv"
+                                android:layout_weight="0.75"
+                                android:ellipsize="end"
+                                android:transitionName="big_title"
+                                android:letterSpacing="0.03"
+                                android:lineSpacingExtra="@dimen/_1pxh"
+                                android:singleLine="true"
+                                android:text="@{detailsVM.detailsModel.txtHeartRate}"
+                                tools:text="@string/lbl_heart_rate" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imageRectangleNineteen"
+                            imageRes="@{@drawable/img_rectangle19}"
+                            android:layout_width="@dimen/_94pxh"
+                            android:layout_height="@dimen/_50pxh"
+                            android:layout_marginStart="@dimen/_80pxh"
+                            android:layout_marginTop="@dimen/_2pxv"
+                            android:scaleType="fitXY"
+                            tools:ignore="ContentDescription"
+                            tools:src="@drawable/img_rectangle19" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtDescription"
+                        style="@style/txtAbelregular13_1"
+                        android:layout_width="match_parent"
+                        android:transitionName="more_details"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:lineSpacingExtra="@dimen/_9pxh"
+                        android:text="@{detailsVM.detailsModel.txtDescription}"
+                        tools:text="@string/msg_heart_rate_als" />
+                </LinearLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMeasureYourHeartRate"
+            style="@style/btnSolidRounded_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:layout_marginHorizontal="@dimen/_24sdp"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:layout_gravity="bottom|center"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_23pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingBottom="@dimen/_23pxv"
+            android:singleLine="true"
+            android:text="@string/msg_measure_your_he"
+            android:textAllCaps="false"
+            tools:text="@string/msg_measure_your_he" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

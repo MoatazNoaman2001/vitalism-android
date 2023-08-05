@@ -1,0 +1,310 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Vitalism Solution</string>
+
+    <string name="web_client_id">1016766472347-uglj539kv87cc3ere5onqr02uce5g7m2.apps.googleusercontent.com</string>
+    <!-- facebook utils-->
+    <string name="facebook_app_id">686979636556168</string>
+    <string name="fb_login_protocol_scheme">fb686979636556168</string>
+    <string name="facebook_client_token">56789</string>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_start">StartActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="lbl_60">60</string>
+    <string name="lbl_m">M</string>
+    <string name="msg_miglitol_glyse">Miglitol (Glyset) Tablets</string>
+    <string name="msg_simply_position">Simply position your face inside the frame before starting the video shooting and make sure your face within the designed area and not too far away</string>
+    <string name="msg_position_yourse">Position yourself comfortably in front of your cell phone\u2019s frontal camera and make sure to hold still while capturing the video</string>
+    <string name="lbl_email_address">Email Address</string>
+    <string name="email">Email</string>
+    <string name="lbl_s">S</string>
+    <string name="lbl_t">T</string>
+    <string name="msg_avoid_any_light">Avoid any light source (sunlight- lamp) behind you but they can be in front of you</string>
+    <string name="lbl_suggested">Suggested</string>
+    <string name="lbl_menna_mahmoud">Menna Mahmoud</string>
+    <string name="lbl_w">W</string>
+    <string name="lbl_reset_password">Reset Password</string>
+    <string name="lbl_y">y</string>
+    <string name="msg_log_in_with_fac">LogIn with Facebook</string>
+    <string name="msg_heart_rate_vari">Heart Rate Variability</string>
+    <string name="msg_bp_200_mg_300"> BP 200 mg / 300 mg, Non prescription, Treatment: Iron Deficiency</string>
+    <string name="msg_ferrous_sulphat">Ferrous Sulphate Tablets</string>
+    <string name="msg_today_my_heart">Today my heart rate is 70</string>
+    <string name="msg_login_wit_touch">Login wit touch ID</string>
+    <string name="msg_a_normal_restin">A normal resting heart rate for adults ranges from 60 to 100 beats per minute......</string>
+    <string name="lbl_male">Male</string>
+    <string name="lbl_clear_all">Clear all</string>
+    <string name="lbl_9_24">9:24</string>
+    <string name="msg_check_adam_s_vi">Check Adam\u2019s Vital Signs</string>
+    <string name="lbl_username">Username</string>
+    <string name="lbl_a">A+</string>
+    <string name="lbl_f">F</string>
+    <string name="lbl_sohag">Sohag</string>
+    <string name="lbl_your_result">Your Result</string>
+    <string name="msg_pulse_respirati">Pulse-Respiration
+ Quotient (PRQ)</string>
+    <string name="lbl_gender">Gender</string>
+    <string name="msg_previous_measur">Previous measurement of your vital signs</string>
+    <string name="lbl_details">Details</string>
+    <string name="msg_please_do_not_c">Please do not cover your forehead with hair, do not talk or looking to the side, do not wear mask while capturing the readings</string>
+    <string name="lbl_welcome">Welcome</string>
+    <string name="lbl_adam_mahmoud">Adam Mahmoud</string>
+    <string name="msg_please_fill_the">Please fill the details and create account</string>
+    <string name="msg_adjust_your_fac">Adjust your face&#13;
+within the frame</string>
+    <string name="lbl_password">Password</string>
+    <string name="msg_r_s_h">Rᴇsʜᴀᴘɪɴɢ Hᴇᴀʟᴛʜᴄᴀʀᴇ ᴡɪᴛʜ Dɪɢɪᴛᴀʟ Sᴏʟᴜᴛɪᴏɴ</string>
+    <string name="lbl_17_november">17 November</string>
+    <string name="lbl_01_26">01:26</string>
+    <string name="lbl_read_more2">Read More</string>
+    <string name="msg_measure_your_he">Measure your heart rate</string>
+    <string name="msg_heart_rate_als">
+        "Heart rate (or pulse rate) is the frequency of the heartbeat measured by the number of contractions of the heart per minute
+(beats per minute, or bpm). The heart rate can vary according to the body's physical needs, including the need to absorb
+oxygen and excrete carbon dioxide,
+A normal resting heart rate for adults ranges from 60 to 100 beats per minute.
+Generally, a lower heart rate at rest implies more efficient heart function and better cardiovascular fitness.
+For example, a well-trained athlete might have a normal resting heart rate closer to 40 beats per minute.
+Keep in mind that many factors can influence heart rate, including:
+Age
+Fitness and activity levels
+Being a smoker
+Having cardiovascular disease, high cholesterol or diabetes
+Air temperature
+Body position (standing up or lying down, for example)
+Emotions
+Body size
+Medications
+Although there's a wide range of normal, an unusually high or low heart rate may indicate an underlying problem.
+Consult your doctor if your resting heart rate is consistently above 100 beats a minute (tachycardia) or if you're not
+a trained athlete and your resting heart rate is below 60 beats a minute (bradycardia) — especially if you have other
+signs or symptoms, such as fainting, dizziness or shortness of breath.
+"</string>
+    <string name="msg_pick_the_perfec">Pick the Perfect&#13;
+Spot in the room&#13;</string>
+    <string name="msg_ourdaily_calciu">Ourdaily Calcium &amp; Vitamin D3</string>
+    <string name="lbl_sun_12_40pm">Sun,12:40pm</string>
+    <string name="lbl_20">20</string>
+    <string name="lbl_mon_11_50pm">Mon,11:50pm</string>
+    <string name="lbl_23">23</string>
+    <string name="lbl_hi_mahmoud">Hi Mahmoud !!</string>
+    <string name="lbl_age">Age</string>
+    <string name="msg_log_in_with_goo">Log In with Google</string>
+    <string name="lbl_last_heart_rate">Last Heart
+rate</string>
+    <string name="msg_date_of_last_me">Date of last measurement </string>
+    <string name="msg_search_for_vita">Search for Vitalism\u2019s user</string>
+    <string name="msg_the_user_has_be">The user has been verified</string>
+    <string name="msg_a_normal_pulse">A normal pulse oximeter reading for your oxygen saturation level is between 95% and 100%........</string>
+    <string name="msg_heart_rate_als2">"Heart rate, also known as pulse, is the number of times a person's heart beats per minute. It is a vital sign that is used to indicate a person's overall health status. A normal heart rate is between 60 and 100 beats per minute, however this can vary depending on factors such as age, sex, and activity level.&#13;
+Heart rate is an important indicator of cardiovascular health. A heart rate that is consistently above or below the normal range may be a sign of an underlying medical condition such as heart disease or thyroid problems. A high heart rate, known as tachycardia, may be caused by conditions such as anxiety or anemia. A low heart rate, known as bradycardia, may be caused by conditions such as hypothyroidism or certain medications.&#13;
+Heart rate can be easily measured by feeling the pulse on the wrist or neck, or using a Vitalism system. It is an important vital sign that should be regularly monitored, particularly for people with known heart conditions or risk factors for heart disease. By monitoring heart rate, healthcare providers can detect potential problems early and take steps to prevent or manage them......"</string>
+    <string name="lbl_857">$857/</string>
+    <string name="lbl_13">13</string>
+    <string name="lbl_get_started">Get Started</string>
+    <string name="lbl_archieved">Archieved</string>
+    <string name="msg_30_november_202">30 November 2022</string>
+    <string name="lbl_sign_up">Sign Up</string>
+    <string name="lbl_mahmoudalyosify">mahmoudalyosify</string>
+    <string name="lbl_16">16</string>
+    <string name="lbl_17">17</string>
+    <string name="lbl_14">14</string>
+    <string name="lbl_15">15</string>
+    <string name="lbl_resend_code_to">Resend code to</string>
+    <string name="lbl_18">18</string>
+    <string name="msg_mahmoud_measure">Mahmoud measured his respiratory rate using Vitalism at 11:36 am on 11-23-2022 and the result was 20 BPM.</string>
+    <string name="lbl_19">19</string>
+    <string name="msg_sign_up_with_go">Sign Up with Google</string>
+    <string name="lbl_otp_code">OTP Code</string>
+    <string name="msg_your_grandmothe">Your grandmother</string>
+    <string name="lbl_register">Register</string>
+    <string name="lbl_dr_ali_hussein">Dr.Ali Hussein</string>
+    <string name="msg_check_your_emai">Check your email</string>
+    <string name="lbl_20_bpm">20 BPM</string>
+    <string name="msg_i_m_vitalism_s">I\u2019m Vitalism\u2019s bot!
+Thank you for agreeing to follow Mahmoud Sayed Youssef and see his vital signs</string>
+    <string name="msg_last_respirator">Last respiratory rate</string>
+    <string name="msg_otp_verificatio">OTP Verification</string>
+    <string name="lbl_sign_up_now">Sign up now</string>
+    <string name="msg_you_can_now_est">You can now estimate vital signs contactless using real-time video</string>
+    <string name="lbl_prq">(PRQ)</string>
+    <string name="msg_healthy_and_unh">Healthy and unhealthy blood pressure ranges ; 120 \u2013 129, and, LESS THAN 80 ; 130 \u2013 139, or, .....</string>
+    <string name="lbl_messages">Messages</string>
+    <string name="msg_your_respirator">Your respiratory rate
+
+is 20 bpm</string>
+    <string name="msg_sign_up_with_fa">Sign Up with Facebook</string>
+    <string name="msg_caregivers_can">caregivers can see your result</string>
+    <string name="msg_your_grandfathe">Your grandfather Youssef\u2019s heart rate is 65</string>
+    <string name="lbl_recent">Recent</string>
+    <string name="msg_enter_your_emai">Enter your email account to reset  your password</string>
+    <string name="msg_version_of_vita">Version of Vitalism</string>
+    <string name="lbl_settings">Settings</string>
+    <string name="lbl_moataz_kayed">Moataz Kayed</string>
+    <string name="msg_your_medication">Your Medication Schedule</string>
+    <string name="msg_23_november_202">23 November 2022</string>
+    <string name="lbl_none">None</string>
+    <string name="msg_mahmoud_alyosif">Mahmoud Alyosify</string>
+    <string name="lbl_23_11_2022">23/11/2022</string>
+    <string name="msg_mahmoud_sayed_y">Mahmoud Sayed Youssef</string>
+    <string name="lbl_assiut">Assiut</string>
+    <string name="msg_password_must">Password must be more than 8 character</string>
+    <string name="msg_password_must_b">Password must be more than 8 character and contain small and large character , numbers and special character</string>
+    <string name="msg_measure_hemoglo">Measure hemoglobin, hemoglobin A1C, and cholesterol total (under research)...</string>
+    <string name="msg_by_signing_in_y">By signing in you are agreeing our Term and privacy policy</string>
+    <string name="msg_respiratory_rat2">respiratory rate condition</string>
+    <string name="lbl_761_person">$761/Person</string>
+    <string name="lbl_sat_10_56pm">Sat,10:56pm</string>
+    <string name="lbl_next">Next</string>
+    <string name="msg_your_grandmothe2">Your grandmother\u2019s heart rate is 50
+She needs to go to the hospital</string>
+    <string name="lbl_wed_12_40pm">Wed,12:40pm</string>
+    <string name="lbl_home">Home</string>
+    <string name="msg_biomarkers_you">Biomarkers You Can Measure
+Using Vitalism\u2019s Technology </string>
+    <string name="msg_already_have_an">Already have an account</string>
+    <string name="lbl_nada_essam">Nada Essam</string>
+    <string name="lbl_country">Country</string>
+    <string name="msg_birth_day_dd_m">Birth day: dd-mm-yyyy</string>
+    <string name="lbl_rate"> rate</string>
+    <string name="lbl_sign_in">Sign in</string>
+    <string name="lbl_active_now">Active Now</string>
+    <string name="msg_i_m_very_glad_y">I\u2019m very glad you like it&#128077;</string>
+    <string name="msg_respiratory_rat">Respiratory Rate</string>
+    <string name="lbl_user_name2">User name</string>
+    <string name="lbl_hello">Hello!</string>
+    <string name="msg_type_you_messag">Type you message</string>
+    <string name="msg_your_mather_s_r">Your Mather\u2019s respiratory rate today is 17 BPM</string>
+    <string name="lbl_add_to_emr">Add to EMR</string>
+    <string name="lbl_cancel">Cancel</string>
+    <string name="msg_mahmoud_measure2">Mahmoud measured his respiratory rate using Vitalism at 11:36 am on 11-23-2022 and the result was </string>
+    <string name="msg_normal_respirat">Normal respiration rates for an adult person at rest range from 12 to 16 breaths per minute......</string>
+    <string name="msg_last_respirator2">Last Respiratory rate</string>
+    <string name="lbl_mina_nashet">Mina Nashet</string>
+    <string name="msg_the_result_is_b">The result is beautiful. You should continue to drink green tea, as drinking two cups of green tea a day helps to relax the muscles of the lungs and reduces inflammation.</string>
+    <string name="lbl_my_schedule">My Schedule</string>
+    <string name="lbl_fri_11_50pm">Fri,11:50pm</string>
+    <string name="lbl_761">$761/</string>
+    <string name="msg_by_signing_in_y2">By signing in you are agreeing our </string>
+    <string name="msg_heart_rate_div">(heart rate divided by the respiration rate, PRQ = HR/RR).....</string>
+    <string name="lbl_your_mom">Your Mom</string>
+    <string name="lbl_view_all">View all</string>
+    <string name="msg_remember_passwo">Remember password</string>
+    <string name="lbl_youssef_kotb">Youssef Kotb</string>
+    <string name="msg_mahmoudalyosify">mahmoudalyosify@gmail.com</string>
+    <string name="lbl_nourhan_ahmed">Nourhan Ahmed</string>
+    <string name="lbl_ahmed_youssef">Ahmed Youssef</string>
+    <string name="lbl_or_connect_with">or connect with</string>
+    <string name="lbl_earlier">Earlier</string>
+    <string name="msg_coming_soon_blo">Coming Soon Bloodless Blood Tests</string>
+    <string name="msg_please_check_yo">Please check your email mahmoudalyosify@gmail.com to see the verification code</string>
+    <string name="lbl_diagnoses">Diagnoses</string>
+    <string name="lbl_blood_pressure">Blood Pressure</string>
+    <string name="lbl_forget_password">Forget password</string>
+    <string name="msg_vital_signs_det">Vital Signs Details</string>
+    <string name="lbl_person">Person</string>
+    <string name="lbl_tue_10_56pm">Tue,10:56pm</string>
+    <string name="msg_oxygen_saturati">Oxygen Saturation</string>
+    <string name="lbl_blood_type">Blood type</string>
+    <string name="lbl_calendar">calendar</string>
+    <string name="lbl_today">Today</string>
+    <string name="lbl_verify">Verify</string>
+    <string name="lbl_last">Last </string>
+    <string name="lbl_97">97/100</string>
+    <string name="lbl_or_connect">Or connect</string>
+    <string name="msg_high_strength_12">High strength 1250mg Organic source Calcium with Vitamin D3 ,Daily Calcium</string>
+    <string name="msg_high_strength_1">High strength 1250mg Organic source Calcium with Vitamin D3 ,Daily Calcium...Read more</string>
+    <string name="msg_we_have_send_pa">We have send password recovery instruction to your email</string>
+    <string name="msg_adjust_your_fac2">Adjust your face and your position</string>
+    <string name="lbl_profile">Profile</string>
+    <string name="lbl_read_more">...Read more</string>
+    <string name="lbl">.</string>
+    <string name="lbl_respiratory">respiratory</string>
+    <string name="msg_heart_rate_vari3">Heart rate variability</string>
+    <string name="msg_heart_rate_vari2">&#13;Heart rate variability is where the amount of time between your heart.......</string>
+    <string name="msg_uncle_s_blood_p">"Uncle's blood pressure today is 95 mm Hg"</string>
+    <string name="lbl_search">Search. . .</string>
+    <string name="msg_vitalism_exampl">Vitalism@example.com</string>
+    <string name="lbl_1">1</string>
+    <string name="lbl_2">2</string>
+    <string name="lbl_3">3</string>
+    <string name="lbl_87">87</string>
+    <string name="lbl_4">4</string>
+    <string name="lbl_5">5</string>
+    <string name="lbl_hi_welcome">Hi, Welcome!  </string>
+    <string name="lbl_6">6</string>
+    <string name="lbl_9_30">9:30</string>
+    <string name="lbl_9_37">9:37</string>
+    <string name="lbl_9_35">9:35</string>
+    <string name="lbl_9_34">9:34</string>
+    <string name="lbl_login">Login</string>
+    <string name="msg_people_you_foll">people you follow</string>
+    <string name="msg_make_yourself_c">Make yourself comfortable</string>
+    <string name="msg_miglitol_glyse2">Miglitol (Glyset) Dose in the treatment of Type 2 Diabetes mellitus</string>
+    <string name="msg_electronic_medi">Electronic Medical Records (EMR)</string>
+    <string name="msg_term_and_privac">Term and privacy polic</string>
+    <string name="lbl_forgot_password">Forgot password</string>
+    <string name="lbl_notification">Notification</string>
+    <string name="lbl_mahmoudalyosify2">mahmoudAlyosify</string>
+    <string name="lbl_vitalism">Vitalism</string>
+    <string name="lbl_857_person">$857/Person</string>
+    <string name="lbl_heart_rate">Heart Rate</string>
+    <string name="msg_25_november_202">25 November 2022</string>
+    <string name="msg_please_enter_valid_email">Please enter valid email</string>
+    <string name="msg_please_enter_valid_pa">Please enter valid password</string>
+    <string name="name">Name</string>
+    <string name="skip">Skip</string>
+    <string name="help_us_to_know_u">help us to know you</string>
+    <string name="deleted_account_text">your profile info not exist any more, please sign out from begin again</string>
+    <string name="you_should_received_verify_email_on_you_mail_box_please_go_and_check_out">you should received verify email on you mail box, please go and check out</string>
+    <string name="fabmain">fabMain</string>
+    <string name="heart_rate_monitor">heart rate monitoring</string>
+    <string name="ppg">ppg</string>
+    <string name="rppg">rPPG</string>
+    <string name="avoid_moving_or_talking">Avoid moving or talking.</string>
+    <string name="ppg_instructions">put your finger on back camera and keep it constant, also keep your finger full on screen to take right measure</string>
+    <string name="msg_heart_rate_vari4">A strong healthy heart will speed up and slow down constantly to address environmental changes and stressors as they appear.  Consistency is not something to strive for when it comes to the heart. Healthy hearts should have beat-to-beat variability  and not consistently beat at the same tempo. This variation between heartbeats is called Heart Rate Variability (HRV).  HRV provides a non-invasive method of analyzing the Autonomic Nervous System (ANS). The body has a number of processes that  are performed automatically when it is confronted with different stressors. These processes are all performed by the ANS  and their functions are how the body is able to manage and recover from internal and external sources of stress.  ANS plays an important part in keeping blood sugar, blood pressure (BP), and body temperature regulated. The nervous system,  cardiovascular system, and respiratory systems are all linked via ANS. This means that with HRV data, an individual’s  psychological health, physical health, and environmental condition can be monitored.  Tracking HRV over time and correlating data segments with specific activities or life events can provide unique insights into the person’s physical fitness level, overall health, or mental health.  Looking at an individual’s HRV trends can also help  identify whether lifestyle changes, medications, or other medical interventions are working as intended.  Heart Rate Variability is Unique to You “High” and “low” HRV is relative for each person. HRV is a highly sensitive metric, which responds uniquely for everyone. Some individuals have steady HRV scores, while others fluctuate greatly. HRV is an evolving tool, which means, at every HRV  level, your personal scores and body status observations are especially important. A normal HRV for adults can range anywhere from below 20 to over 200 milliseconds.* The best way to determine your normal  level is to use a wearable that measures your HRV in a controlled setting, like sleep, and establishes a baseline over a  few weeks. Each person’s HRV is unique, so compare your HRV to your own averages and avoid comparisons to others. It’s normal to see  daily and seasonal fluctuations in your HRV. Keep in mind that there are many factors that impact your ANS.</string>
+    <string name="msg_respiratory_rat_discription">Respiration is a vital process for humans, supplying oxygen to the mitochondria for ATP production (our bodies energy  currency). The main byproduct of this process, carbon dioxide which goes through a process to finally be exhaled form our  lungs. The respiratory rate in humans is measured by counting the number of breaths for one minute through counting how many times  the chest rises.  Respiration rates may increase with fever, illness, or other medical conditions. For humans, the typical respiratory rate for a healthy adult at rest is 12–15 breaths per minute. The respiratory center  sets the quiet respiratory rhythm at around two seconds for an inhalation and three seconds exhalation. This gives the lower  of the average rate at 12 breaths per minute. Average resting respiratory rates by age are: birth to 6 weeks: 30–40 breaths per minute 6 months: 25–40 breaths per minute 3 years: 20–30 breaths per minute 6 years: 18–25 breaths per minute 10 years: 17–23 breaths per minute Adults: 15–18 breaths per minute 50 years: 18-25 breaths per minute Elderly ≥ 65 years old: 12–28 breaths per minute. Elderly ≥ 80 years old: 10-30 breaths per minute.</string>
+    <string name="msg_oxygen_saturati_discription">" Oxygen saturation measures the percentage of oxyhemoglobin (oxygen-bound hemoglobin) in the blood, and it is represented as  arterial oxygen saturation (SaO2) and venous oxygen saturation (SvO2). Oxygen saturation is a vital parameter to define blood oxygen content and oxygen delivery. Each hemoglobin molecule contains four heme groups that can readily bind molecular oxygen present in the blood.  This means that a hemoglobin molecule can bind up to four oxygen molecules during transport in the blood. For adults, the normal range of SaO2 is 95 – 100%. A value lower than 90% is considered low oxygen saturation, which requires external oxygen supplementation.        During aerobic metabolism, the body utilizes oxygen to convert glucose into pyruvate and generate two molecules of ATP.  The oxygen content in the blood depends on the oxygen-hemoglobin dissociation curve, which is a plot to define the  percentage of saturated hemoglobin to the partial pressure of oxygen (PO2). A hemoglobin molecule becomes 100% saturated  with oxygen (1.34 L of oxygen) at a PO2 of 100 mmHg.        After binding each oxygen molecule, hemoglobin undergoes a conformational change that increases its affinity for the next  oxygen molecule. Because of the high oxygen affinity, each hemoglobin molecule becomes rapidly saturated with oxygen; thus,  the amount of free oxygen dissolved in the blood is only a very small fraction (2%) of the total oxygen present in the blood. Because of this, the level of oxyhemoglobin is considered equal to the blood oxygen content. A lower than normal level of oxygen in the blood is defined as hypoxemia. Generally, an oxygen saturation level of lower  than 90% is considered as hypoxemia, which can result from cardiopulmonary complications, sleep apnea, certain medicines,  and high-altitude exposure. The most common symptoms of hypoxemia include headache, rapid heart rate, coughing, shortness of breath, wheezing, confusion, and blueness of the skin and mucus membranes (cyanosis).   Cyanosis is a pathological condition characterized by extremely low oxygen saturation. There are two types of cyanosis:  central cyanosis and peripheral cyanosis. In central cyanosis, oxygen saturation level drops below 85%, which causes the  appearance of a bluish hue all over the skin and visible mucosa. "</string>
+    <string name="heart_rate_veriability_uri"><![CDATA[https://firebasestorage.googleapis.com/v0/b/vitalism-solution.appspot.com/o/app%2Futilis%2Fphotos%2Fmoataz2221_heart_rate_veriability__realistic_8k_b2a9b055-4493-45a5-b514-c1409a823f34.png?alt=media&token=6c2cad5a-48fb-4532-aeea-cf3345a61cba]]></string>
+    <string name="blood_pressure_uri"><![CDATA[https://firebasestorage.googleapis.com/v0/b/vitalism-solution.appspot.com/o/app%2Futilis%2Fphotos%2Fmoataz2221_human_aorta_pumping_hard__realistic_8k_09fde3a0-1bc7-40cf-aeea-4b07f05989fb.png?alt=media&token=7959d6cb-bd6a-4022-93cc-9aa4c337e806]]></string>
+    <string name="lbl_blood_pressure_details">Blood pressure is a measure of the force that your heart uses to pump blood around your body. Blood pressure is measured in millimetres of mercury (mmHg) and is given as 2 figures: systolic pressure – the pressure when your heart pushes blood out diastolic pressure – the pressure when your heart rests between beats For example, if your blood pressure is \"140 over 90\" or 140/90mmHg, it means you have a systolic pressure of 140mmHg and a  diastolic pressure of 90mmHg. As a general guide: ideal blood pressure is considered to be between 90/60mmHg and 120/80mmHg high blood pressure is considered to be 140/90mmHg or higher low blood pressure is considered to be below 90/60mmHg. High blood pressure is often related to unhealthy lifestyle habits, such as smoking, drinking too much alcohol, being  overweight and not exercising enough. Left untreated, high blood pressure can increase your risk of developing a number of serious long-term health conditions,  including coronary heart disease. You also risk damaging the blood vessels in your kidneys or eyes. Low blood pressure is less common. Some medicines can cause low blood pressure as a side effect. It can also be caused by a  number of underlying conditions, including heart failure and dehydration.</string>
+    <string name="blood_pressure_details_uri"><![CDATA[https://firebasestorage.googleapis.com/v0/b/vitalism-solution.appspot.com/o/app%2Futilis%2Fphotos%2Fmoataz2221_human_aorta_pumping_hard__realistic_8k_5190c56e-abca-4699-9153-fec7e193faf0.png?alt=media&token=703e0a6a-6359-4751-b65c-d6f358018f76]]></string>
+    <string name="respiratory_rat_details_uri"><![CDATA[https://firebasestorage.googleapis.com/v0/b/vitalism-solution.appspot.com/o/app%2Futilis%2Fphotos%2Fmousa_ashraf_oxygen_molcules_saturation_in_human_body_flows_int_8d1d51ce-277f-4e0f-b890-d960e9199a6e.png?alt=media&token=b692b0ad-5fbb-4f76-8255-723cd9a3f204]]></string>
+    <string name="this_part_of_application_not_in_demo_mode">this part of application is not available in demo mode</string>
+    <string name="update_profile_image">update profile image</string>
+    <string name="no_emr_data">No EMR Data</string>
+    <string name="loadin_your_emr_data">Loading your EMR data</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="sign_out">sign out</string>
+    <string name="lbl_phone_number">Phone number</string>
+    <string name="gender">gender</string>
+    <string name="rppg_instructions">be constant while taking your hr reads in range of minute , don\'t shack your head or phone</string>
+    <string name="contribue">Contributions</string>
+    <string name="users">Users</string>
+    <string name="emr">Emr</string>
+    <string name="type_in_the_search_bar_for_search">Type in the search bar for search</string>
+    <string name="add_schedule">add schedule</string>
+    <string name="notifications">notifications</string>
+    <string name="you_are_currently_measuring_your_vital_sign_in_other_device">you are currently measuring your vital sign in other device</string>
+    <string name="phone_number">phone number</string>
+    <string name="follow">follow</string>
+    <string name="followed">followed</string>
+    <string name="this_part_of_application_is_not_available_in_beta_mode">this part of application is not available in beta mode</string>
+    <string name="accepted">accepted</string>
+    <string name="lbl_pulse_respiration_quotient_details"><![CDATA["The Pulse-Respiration Quotient is a measure that calculates the ratio between the pulse rate and the res rate is often used in medical settings to assess the overall health and physiological condition of an individual.The pulse rate refers to the number of times the heart beats per minute, while the respiration rate refers to the number of breaths taken per minute. By the quotient between these two, healthcare professionals can gain insights the cardiovascular and respiratory systems' functioning and their interplay.the Pulse-ient can provide several benefits1. Health Assessment: The Pulse-Respiration Quotient can help assess an individual's overall health and well-being. from the normal range may indicate underlying conditions or imbalances in the cardiovascular or respiratory systems.Fitness Evaluation: Athletes and fitness enthusiasts can the Pulse-piration Quotient to monitor their training progress and cardiovascular fitness. A lower quotient may indicate improved cardiovascular efficiency and endurance.Stress and Anxiety Monitoring: Changes in the Pulse-Respiration Quotient can be indicative of or anxiety levels. Higher values may suggest increased nervous system activity, while lower values may indicate relaxation or parasympath dominance.Respiratory Disorders: Monitoring the Pulse-Respirationient can be useful in diagn and managing respiratory disorders such as asthma, chronic obstructive pulmonary disease (COPD), or sleepnea. Deviations from the normal range can identify potential respiratory abnormalities.5.iac Health: The Pulse-Respiration Qu can provide insights into the heart's efficiency and functioning. Significant deviations may indicate cardiac conditions such as arrhythmias or heart failure.It is important to note that the Pulse-Respiration Quotient is just one of many measures used in healthcare, and its interpretation should be done in conjunction with other clinical assessments and medical history. Consulting with a healthcare professional is recommended for accurate interpretation and evaluation of the results.]]></string>
+    <string name="pulse_respiration_quotient">BPM/RR</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".models.startActivity.ui.StartActivity">
+    
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:src="@drawable/img_arrowleft"
+        android:padding="@dimen/_10sdp"
+        android:visibility="gone"
+        android:background="@drawable/ic_baseline_circle_24"/>
+    <include layout="@layout/content_start" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

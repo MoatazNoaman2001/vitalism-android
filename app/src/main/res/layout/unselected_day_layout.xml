@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_70sdp"
+    android:layout_height="@dimen/_110sdp"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/DayInNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/gray_400"
+        tools:text="T"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/DayAbbriv"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textStyle="bold"
+        tools:text="16"
+        android:textColor="@color/black"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:layout_height="wrap_content"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

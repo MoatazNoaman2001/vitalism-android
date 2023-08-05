@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".models.editProfile.ui.EditProfileFragment">
+
+        <com.example.livenativerppg.models.emr_EMR.ui.CustomMaterialToolbar
+            android:layout_width="match_parent"
+            android:id="@+id/toolbar"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:transitionName="toolbar_title"
+            android:layout_height="?actionBarSize"
+            app:navigationIcon="@mipmap/ios_back_btn_blue"
+            app:title="edit profile"
+            app:titleCentered="true"
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:id="@+id/cancleBtn"
+                android:visibility="gone"
+                android:layout_marginEnd="@dimen/_12sdp"
+                app:tint="@color/blue_A200"
+                app:srcCompat="@drawable/ic_round_check_24"/>
+        </com.example.livenativerppg.models.emr_EMR.ui.CustomMaterialToolbar>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/_14sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+
+                    android:id="@+id/ProfImage"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginVertical="@dimen/_40sdp"
+                    android:scaleType="centerCrop"
+                    android:transitionName="img_small"
+                    android:src="@drawable/img_rectangle839_123x146"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.501"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:id="@+id/updateImgUploadIndecator"
+                    app:indicatorSize="@dimen/_120sdp"
+                    app:indicatorColor="@color/blue_A200"
+                    android:progress="20"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/ProfImage"
+                    app:layout_constraintEnd_toEndOf="@+id/ProfImage"
+                    app:layout_constraintStart_toStartOf="@+id/ProfImage"
+                    app:layout_constraintTop_toTopOf="@+id/ProfImage" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/editImageBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@drawable/img_edit"
+                    app:layout_constraintBottom_toBottomOf="@+id/ProfImage"
+                    app:layout_constraintEnd_toEndOf="@+id/ProfImage"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/ProfImage"
+                    app:layout_constraintTop_toTopOf="@+id/ProfImage"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:tint="@color/blue_A200" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginVertical="@dimen/_20sdp"
+                    app:layout_constraintTop_toBottomOf="@id/ProfImage"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/NameTextInputLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/name"
+                        android:textColorHint="@color/gray_900"
+                        app:boxBackgroundColor="@color/gray_100"
+                        app:boxCornerRadiusBottomEnd="@dimen/_14pxv"
+                        app:boxCornerRadiusBottomStart="@dimen/_14pxv"
+                        app:boxCornerRadiusTopEnd="@dimen/_14pxv"
+                        app:boxCornerRadiusTopStart="@dimen/_14pxv"
+                        app:boxStrokeColor="@color/gray_100"
+                        app:boxStrokeErrorColor="@color/red_600"
+                        app:boxStrokeWidth="1dp"
+                        app:counterTextColor="@color/blue_801"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ProfImage"
+                        app:layout_constraintVertical_bias="0.16000003"
+                        tools:hint="@string/name">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abel"
+                            android:paddingStart="12dp"
+                            android:textColor="@color/gray_900" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/EmailTextInputLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/lbl_email_address"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:textColorHint="@color/gray_900"
+                        app:boxBackgroundColor="@color/gray_100"
+                        app:boxCornerRadiusBottomEnd="@dimen/_14pxv"
+                        app:boxCornerRadiusBottomStart="@dimen/_14pxv"
+                        app:boxCornerRadiusTopEnd="@dimen/_14pxv"
+                        app:boxCornerRadiusTopStart="@dimen/_14pxv"
+                        app:boxStrokeColor="@color/gray_100"
+                        app:boxStrokeErrorColor="@color/red_600"
+                        app:boxStrokeWidth="1dp"
+                        app:counterTextColor="@color/blue_801"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ProfImage"
+                        app:layout_constraintVertical_bias="0.16000003"
+                        tools:hint="@string/lbl_email_address">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abel"
+                            android:enabled="false"
+                            android:paddingStart="12dp"
+                            android:textColor="@color/gray_900" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/CountryTextInputLayout3"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/lbl_country"
+                            android:textColorHint="@color/gray_900"
+                            app:boxBackgroundColor="@color/gray_100"
+                            app:boxCornerRadiusBottomEnd="@dimen/_14pxv"
+                            app:boxCornerRadiusBottomStart="@dimen/_14pxv"
+                            app:boxCornerRadiusTopEnd="@dimen/_14pxv"
+                            app:boxCornerRadiusTopStart="@dimen/_14pxv"
+                            app:boxStrokeColor="@color/gray_100"
+                            app:boxStrokeErrorColor="@color/red_600"
+                            app:boxStrokeWidth="1dp"
+                            app:endIconMode="custom"
+                            app:endIconDrawable="@drawable/img_location"
+                            app:endIconTint="@color/blue_A200"
+                            android:layout_marginTop="16dp"
+                            app:counterTextColor="@color/blue_801"
+                            app:hintAnimationEnabled="true"
+                            app:hintEnabled="true"
+                            tools:hint="@string/lbl_country">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/abel"
+                                android:paddingStart="12dp"
+                                android:textColor="@color/gray_900" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <androidx.legacy.widget.Space
+                            android:layout_width="@dimen/_8sdp"
+                            android:layout_height="match_parent"/>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/GenderTextInputLayout3"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="@string/gender"
+                            android:textColorHint="@color/gray_900"
+                            app:boxBackgroundColor="@color/gray_100"
+                            app:boxCornerRadiusBottomEnd="@dimen/_14pxv"
+                            app:boxCornerRadiusBottomStart="@dimen/_14pxv"
+                            app:boxCornerRadiusTopEnd="@dimen/_14pxv"
+                            app:boxCornerRadiusTopStart="@dimen/_14pxv"
+                            app:boxStrokeColor="@color/gray_100"
+                            app:boxStrokeErrorColor="@color/red_600"
+                            app:boxStrokeWidth="1dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="16dp"
+                            app:counterTextColor="@color/blue_801"
+                            app:hintAnimationEnabled="true"
+                            app:hintEnabled="true"
+                            tools:hint="@string/gender">
+
+
+                            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                                android:id="@+id/genderAutoCompleteTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/abel"
+                                android:textSize="@dimen/_12ssp"
+                                android:paddingStart="12dp"
+                                android:textColor="@color/gray_900" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/BloodTypeTextInputLayout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:hint="@string/lbl_blood_type"
+                            android:textColorHint="@color/gray_900"
+                            app:boxBackgroundColor="@color/gray_100"
+                            app:boxCornerRadiusBottomEnd="@dimen/_14pxv"
+                            app:boxCornerRadiusBottomStart="@dimen/_14pxv"
+                            app:boxCornerRadiusTopEnd="@dimen/_14pxv"
+                            app:boxCornerRadiusTopStart="@dimen/_14pxv"
+                            app:boxStrokeColor="@color/gray_100"
+                            app:boxStrokeErrorColor="@color/red_600"
+                            app:boxStrokeWidth="1dp"
+                            app:counterTextColor="@color/blue_801"
+                            app:hintAnimationEnabled="true"
+                            app:hintEnabled="true"
+                            app:endIconMode="dropdown_menu"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/CountryTextInputLayout3"
+                            app:layout_constraintVertical_bias="0.060000002"
+                            tools:hint="@string/lbl_blood_type">
+
+                            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/abel"
+                                android:id="@+id/bloodTypeCompleteTextView"
+                                android:paddingStart="12dp"
+                                android:textColor="@color/gray_900" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <Space
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="match_parent"/>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/DiagnosesTextInputLayout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_weight="1"
+                            android:hint="@string/lbl_diagnoses"
+                            android:textColorHint="@color/gray_900"
+                            app:boxBackgroundColor="@color/gray_100"
+                            app:boxCornerRadiusBottomEnd="@dimen/_14pxv"
+                            app:boxCornerRadiusBottomStart="@dimen/_14pxv"
+                            app:boxCornerRadiusTopEnd="@dimen/_14pxv"
+                            app:boxCornerRadiusTopStart="@dimen/_14pxv"
+                            app:boxStrokeColor="@color/gray_100"
+                            app:boxStrokeErrorColor="@color/red_600"
+                            app:boxStrokeWidth="1dp"
+                            app:counterTextColor="@color/blue_801"
+                            app:hintAnimationEnabled="true"
+                            app:hintEnabled="true"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/BloodTypeTextInputLayout"
+                            app:layout_constraintVertical_bias="0.5"
+                            tools:hint="@string/lbl_diagnoses">
+
+                            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/abel"
+                                android:paddingStart="12dp"
+                                android:id="@+id/diaganosesAutoComplete"
+                                android:textColor="@color/gray_900" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/phoneNumberTextInputLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:hint="@string/lbl_phone_number"
+                        android:textColorHint="@color/gray_900"
+                        app:boxBackgroundColor="@color/gray_100"
+                        app:boxCornerRadiusBottomEnd="@dimen/_14pxv"
+                        app:boxCornerRadiusBottomStart="@dimen/_14pxv"
+                        app:boxCornerRadiusTopEnd="@dimen/_14pxv"
+                        app:boxCornerRadiusTopStart="@dimen/_14pxv"
+                        app:boxStrokeColor="@color/gray_100"
+                        app:boxStrokeErrorColor="@color/red_600"
+                        app:boxStrokeWidth="1dp"
+                        app:counterTextColor="@color/blue_801"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/CountryTextInputLayout3"
+                        app:layout_constraintVertical_bias="0.5"
+                        tools:hint="@string/lbl_phone_number">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abel"
+                            android:inputType="phone"
+                            android:paddingStart="12dp"
+                            android:textColor="@color/gray_900" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/birthDayTextInputLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:hint="@string/msg_birth_day_dd_m"
+                        android:textColorHint="@color/gray_900"
+                        app:boxBackgroundColor="@color/gray_100"
+                        app:boxCornerRadiusBottomEnd="@dimen/_14pxv"
+                        app:boxCornerRadiusBottomStart="@dimen/_14pxv"
+                        app:boxCornerRadiusTopEnd="@dimen/_14pxv"
+                        app:boxCornerRadiusTopStart="@dimen/_14pxv"
+                        app:boxStrokeColor="@color/gray_100"
+                        app:boxStrokeErrorColor="@color/red_600"
+                        app:boxStrokeWidth="1dp"
+                        app:endIconMode="custom"
+                        app:endIconDrawable="@drawable/ic_calender_24"
+                        app:endIconTint="@color/blue_A200"
+                        app:counterTextColor="@color/blue_801"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/CountryTextInputLayout3"
+                        app:layout_constraintVertical_bias="0.5"
+                        tools:hint="@string/msg_birth_day_dd_m">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abel"
+                            android:paddingStart="12dp"
+                            android:editable="false"
+                            android:textColor="@color/gray_900" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/changeEmailBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_43sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:text="change Email"
+                        android:layout_marginHorizontal="@dimen/_8sdp"
+                        app:cornerRadius="@dimen/_8sdp"
+                        app:backgroundTint="@color/blue_A200"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/resetPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_43sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Reset Password"
+                        android:layout_marginHorizontal="@dimen/_8sdp"
+                        app:cornerRadius="@dimen/_8sdp"
+                        app:backgroundTint="@color/blue_A200"/>
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/signoutBtn"
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_height="@dimen/_43sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginHorizontal="@dimen/_8sdp"
+                        app:cornerRadius="@dimen/_8sdp"
+                        android:layout_gravity="center"
+                        android:text="@string/sign_out" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

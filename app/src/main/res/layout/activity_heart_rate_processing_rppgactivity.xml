@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".models.heartRateProcessing.ui.HeartRateProcessingRPPGFragment">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp"
+            android:orientation="vertical"
+            android:background="@color/black_901"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+            <com.google.android.material.appbar.MaterialToolbar
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:id="@+id/toolbar"
+                app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_24"
+                app:navigationIconTint="@color/white"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                style="@style/groupStylecornerRadius_6"
+                android:layout_height="@dimen/_90sdp">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/previewTextView"
+                    android:layout_marginHorizontal="@dimen/_8sdp"
+                    android:layout_marginVertical="@dimen/_20sdp"
+                    android:textColor="@color/white"
+                    android:text="@string/rppg_instructions"
+                    android:textAlignment="textStart" />
+
+                <FrameLayout
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7">
+                    <com.google.android.material.progressindicator.CircularProgressIndicator
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:id="@+id/readProgress"
+                        tools:progress="20"
+                        android:max="60"
+                        app:indicatorColor="@color/blue_A200"
+                        app:indicatorSize="@dimen/_50sdp"
+                        app:trackColor="@color/gray_500"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/progressTxtView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:text="0"
+                        tools:text="12%"/>
+                </FrameLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/perviewVpiew"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topLayout"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/generatedImageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topLayout"
+            app:layout_constraintVertical_bias="0.5" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayoutCompat"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp"
+            android:background="@drawable/rectangle_bg_white_a700_radius_tl_55_tr_55"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/bpmTxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/interbold"
+                    android:text="0.0"
+                    android:textSize="@dimen/_24ssp"
+                    android:textStyle="bold"
+                    tools:text="64" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/unitTxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:text="bpm"
+                    android:textSize="@dimen/_12ssp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_14sdp"
+                android:layout_marginVertical="@dimen/_20sdp"
+                android:text="@string/ppg_instructions"
+                android:textAlignment="center" />
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/progress_horizontal_det"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:progress="0"
+                app:indicatorColor="@color/green_800"
+                app:trackColor="@android:color/transparent"
+                app:trackCornerRadius="12dp"
+                app:trackThickness="16dp"
+                tools:progress="20" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

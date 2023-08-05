@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_4sdp"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="start"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:id="@+id/messageBody">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_4sdp"
+                android:id="@+id/textMsg"
+                tools:text="Hallo"
+                android:backgroundTint="#C0C0C0"
+                android:background="@drawable/rounded_rect"/>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="8dp"
+                android:id="@+id/extraView"
+                android:layout_marginTop="-1.5dp"
+                android:layout_height="16dp"
+                android:layout_gravity="start"
+                android:backgroundTint="#C0C0C0"
+                android:background="@drawable/corner"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:id="@+id/stateImg"
+            tools:src="@drawable/hourglass_top"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    
+    
+</androidx.appcompat.widget.LinearLayoutCompat>

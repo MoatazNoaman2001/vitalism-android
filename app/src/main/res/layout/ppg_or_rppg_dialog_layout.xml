@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_160sdp"
+    android:gravity="center_horizontal"
+    android:backgroundTint="@color/white"
+    android:background="@drawable/rectangle_bg_white_a700_radius_23"
+    android:layout_marginHorizontal="@dimen/_6sdp"
+    android:orientation="vertical">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@color/blue_A200"
+        app:contentPadding="@dimen/_9sdp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+        app:srcCompat="@drawable/ic_monitor_heart"
+        app:tint="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_2sdp"
+        android:fontFamily="@font/interbold"
+        android:textSize="@dimen/_19sdp"
+        android:text="@string/heart_rate_monitor" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_13ssp"
+        android:layout_marginHorizontal="@dimen/_4sdp"
+        android:id="@+id/details"
+        android:textAlignment="center"
+        android:fontFamily="@font/roboto"
+        android:text="choose the methdology you want to measure your vital sign"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_4sdp"
+        android:gravity="center">
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ppgBtn"
+            android:layout_weight="1"
+            android:text="by Finger"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:paddingHorizontal="8dp"
+            android:textSize="@dimen/_14sdp"
+            android:background="@drawable/rectangle_bg_blue_a200_radius_34_22"
+            android:textColor="@color/white"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rppgBtn"
+            android:layout_weight="1"
+            android:text="by Face"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:paddingHorizontal="8dp"
+            android:textSize="@dimen/_14sdp"
+            android:background="@drawable/rectangle_bg_blue_a200_radius_34_22"
+            android:textColor="@color/white"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rppgBtnFacemesh"
+            android:text="New Face mesh"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:paddingHorizontal="8dp"
+            android:textSize="@dimen/_11sdp"
+            android:background="@drawable/rectangle_bg_blue_a200_radius_34_22"
+            android:textColor="@color/white"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

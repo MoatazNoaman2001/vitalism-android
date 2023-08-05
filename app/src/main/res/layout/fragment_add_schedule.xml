@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".models.schedule.ui.AddScheduleFragment">
+
+        <TimePicker
+            android:id="@+id/timePacker"
+            android:layout_width="match_parent"
+            android:numbersSelectorColor="@color/blue_A200"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="@dimen/_14sdp"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@color/gray_50"
+            app:cardElevation="4dp">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp"
+                android:layout_height="match_parent">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        tools:text="Every Day"
+                        android:id="@+id/weekDayTextView"
+                        android:textColor="@color/gray_500"
+                        android:textSize="@dimen/_16ssp"/>
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:id="@+id/DatePicker"
+                        app:tint="@color/gray_500"
+                        app:srcCompat="@drawable/ic_calender_24"/>
+                </FrameLayout>
+                <com.dpro.widgets.WeekdaysPicker
+                    android:id="@+id/weekDays"
+                    android:layout_marginVertical="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:sunday_first_day="false"
+                    app:background_color="@color/gray_100"
+                    app:highlight_color="@color/blue_A200"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/MedicineTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                    app:boxBackgroundColor="@color/gray_50"
+                    app:boxCornerRadiusBottomEnd="@dimen/_8sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_8sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_8sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_8sdp"
+                    app:boxStrokeWidthFocused="1dp"
+                    app:errorEnabled="true"
+                    app:helperText="type medicine name"
+                    app:helperTextEnabled="true"
+                    app:helperTextTextColor="@color/blue_A200"
+                    android:hint="medicine name"
+                    app:counterEnabled="true"
+                    app:hintAnimationEnabled="true"
+                    app:counterTextColor="@color/blue_A200">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/EmergencyLevelTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                    app:boxBackgroundColor="@color/gray_50"
+                    app:boxCornerRadiusBottomEnd="@dimen/_8sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_8sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_8sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_8sdp"
+                    app:boxStrokeWidthFocused="1dp"
+                    android:hint="Emergency Level">
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/emergecyEditText"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="add"
+                android:id="@+id/addBtn"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_25sdp"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"/>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

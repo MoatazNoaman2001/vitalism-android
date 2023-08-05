@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="loginToVitalismAppVM"
+            type="com.example.livenativerppg.models.startActivity.data.viewmodel.LoginToVitalismAppVM" />
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/linearColumnvideocamera"
+        style="@style/groupStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frameStack"
+            style="@style/groupStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="4dp"
+            android:layout_marginTop="@dimen/_2sdp">
+
+            <ImageView
+                android:id="@+id/imageRectangleSeventeen"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_648pxv"
+                android:layout_gravity="top|start"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_rectangle17"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_rectangle17" />
+            <ImageView android:id="@+id/imageRectangleEighteen"
+                android:layout_gravity="bottom|start"
+                android:layout_height="@dimen/_450pxv"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_rectangle18"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle18"/>
+
+
+            <FrameLayout
+                android:id="@+id/frameStackrectangleseventeen"
+                android:layout_width="match_parent"
+                android:layout_height="577dp"
+                android:layout_gravity="top|start"
+                android:layout_marginBottom="@dimen/_9sdp"
+                android:elevation="4dp">
+
+
+                <LinearLayout
+                    android:id="@+id/linearColumnrectanglenineteen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:layout_marginStart="@dimen/_23sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_23sdp"
+                    android:layout_marginBottom="@dimen/_30sdp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageRectangleNineteen"
+                        cornerRadius="@{@dimen/_29pxh}"
+                        imageRes="@{@drawable/img_rectangle19}"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_marginStart="@dimen/_35pxh"
+                        android:layout_marginEnd="@dimen/_25pxh"
+                        android:gravity="center_horizontal"
+                        android:scaleType="fitXY"
+                        android:transitionName="vitalism_logo_big"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_rectangle19" />
+
+                    <LinearLayout
+                        android:id="@+id/linearColumnwelcome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_14pxv"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtWelcome"
+                            style="@style/txtTrebuchetMS21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="@{loginToVitalismAppVM.loginToVitalismAppModel.txtWelcome}"
+                            tools:text="@string/lbl_welcome" />
+
+                        <TextView
+                            android:id="@+id/txtBysigninginy"
+                            style="@style/txtRobotoregular16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_34pxh"
+                            android:layout_marginTop="@dimen/_5pxv"
+                            android:layout_marginEnd="@dimen/_34pxh"
+                            android:gravity="center_horizontal"
+                            android:lineSpacingExtra="@dimen/_4pxh"
+                            android:text="@{loginToVitalismAppVM.loginToVitalismAppModel.txtBysigninginy}"
+                            tools:text="@string/msg_by_signing_in_y" />
+
+                        <!--                        <com.google.android.material.textfield.TextInputLayout-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="match_parent"-->
+                        <!--                            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"-->
+                        <!--                            app:boxBackgroundMode="outline"-->
+                        <!--                            app:boxBackgroundColor="@color/gray_100_7f"-->
+                        <!--                            app:boxCornerRadiusBottomEnd="@dimen/_9pxh"-->
+                        <!--                            app:boxCollapsedPaddingTop="@dimen/_9pxh"-->
+                        <!--                            app:boxCornerRadiusBottomStart="@dimen/_9pxh"-->
+                        <!--                            app:boxCornerRadiusTopEnd="@dimen/_9pxh"-->
+                        <!--                            app:boxCornerRadiusTopStart="@dimen/_9pxh"-->
+                        <!--                            app:boxStrokeColor="@color/gray_200_7f"-->
+                        <!--                            app:boxStrokeErrorColor="@color/red_600"-->
+                        <!--                            app:boxStrokeWidth="2dp"-->
+                        <!--                            app:endIconMode="custom"-->
+                        <!--                            android:layout_marginTop="@dimen/_16pxv"-->
+                        <!--                            app:endIconDrawable="@drawable/img_mail"-->
+                        <!--                            app:counterEnabled="true"-->
+                        <!--                            app:hintAnimationEnabled="true"-->
+                        <!--                            app:hintEnabled="true"-->
+                        <!--                            app:helperTextTextColor="@color/blue_801"-->
+                        <!--                            app:hintTextColor="@color/blue_801"-->
+                        <!--                            app:helperText="email addr: moa.123xx@gxx.com"-->
+                        <!--                            app:endIconTint="@color/blue_801">-->
+
+                        <!--                            <com.google.android.material.textfield.TextInputEditText-->
+                        <!--                                android:layout_width="match_parent"-->
+                        <!--                                android:inputType="textEmailAddress"-->
+                        <!--                                android:hint="@{loginToVitalismAppVM.loginToVitalismAppModel.etFrame451Value}"-->
+                        <!--                                android:layout_height="wrap_content" />-->
+                        <!--                        </com.google.android.material.textfield.TextInputLayout>-->
+
+                        <EditText
+                            android:id="@+id/etFrame451"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_16pxv"
+                            android:background="@drawable/rectangle_bg_gray_50_border_gray_401_radius_9"
+                            android:drawableEnd="@drawable/img_mail"
+                            android:drawablePadding="@dimen/_30pxh"
+                            style="@style/etSolidRoundedOutline"
+                            android:ellipsize="end"
+                            android:hint="@string/lbl_email_address"
+                            android:inputType="textEmailAddress"
+                            android:paddingStart="@dimen/_17pxh"
+                            android:paddingTop="@dimen/_12pxv"
+                            android:paddingEnd="@dimen/_14pxh"
+                            android:paddingBottom="@dimen/_18pxv"
+                            android:singleLine="true"
+                            android:text="@{loginToVitalismAppVM.loginToVitalismAppModel.etFrame451Value}"
+                            android:textColorHint="@color/gray_400"
+                            tools:ignore="Autofill" />
+
+                        <!--                        <EditText-->
+                        <!--                            android:id="@+id/etFrame452"-->
+                        <!--                            style="@style/etSolidRoundedOutline"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginTop="@dimen/_15pxv"-->
+                        <!--                            android:background="@drawable/rectangle_bg_gray_50_border_gray_401_radius_9"-->
+                        <!--                            android:drawableEnd="@drawable/img_lock"-->
+                        <!--                            android:drawablePadding="@dimen/_30pxh"-->
+                        <!--                            android:ellipsize="end"-->
+                        <!--                            android:hint="@string/lbl_password"-->
+                        <!--                            android:inputType="textPassword"-->
+                        <!--                            android:paddingStart="@dimen/_18pxh"-->
+                        <!--                            android:paddingTop="@dimen/_12pxv"-->
+                        <!--                            android:paddingEnd="@dimen/_16pxh"-->
+                        <!--                            android:paddingBottom="@dimen/_18pxv"-->
+                        <!--                            android:singleLine="true"-->
+                        <!--                            android:text="@={loginToVitalismAppVM.loginToVitalismAppModel.etFrame452Value}"-->
+                        <!--                            android:textColorHint="@color/gray_400"-->
+                        <!--                            tools:ignore="Autofill" />-->
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/passwordEditLayout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/lbl_password"
+                            android:textColorHint="@color/gray_300"
+                            app:boxBackgroundColor="@color/gray_51"
+                            app:boxCornerRadiusBottomEnd="@dimen/_14pxv"
+                            app:boxCornerRadiusBottomStart="@dimen/_14pxv"
+                            app:boxCornerRadiusTopEnd="@dimen/_14pxv"
+                            app:boxCornerRadiusTopStart="@dimen/_14pxv"
+                            app:boxStrokeColor="@color/gray_100"
+                            app:boxStrokeErrorColor="@color/red_600"
+                            app:boxStrokeWidth="1dp"
+                            app:counterEnabled="true"
+                            app:counterTextColor="@color/blue_801"
+                            app:endIconMode="password_toggle"
+                            app:endIconTint="@color/gray_500"
+                            app:helperText="@string/msg_password_must"
+                            app:helperTextTextColor="@color/blue_801"
+                            app:hintAnimationEnabled="true"
+                            app:hintEnabled="true"
+                            app:hintTextColor="@color/gray_900">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                style="@style/etSolidRoundedOutline"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearRowforgetpassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_18pxv"
+                            android:layout_marginEnd="@dimen/_2pxh"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/linearRowcheckmark"
+                                style="@style/groupStylecornerRadius_1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_1pxv"
+                                android:layout_weight="0.61"
+                                android:orientation="horizontal">
+
+                                <androidx.appcompat.widget.AppCompatCheckBox
+                                    android:id="@+id/txtRememberpasswo"
+                                    style="@style/txtTrebuchetMS14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:layout_marginStart="@dimen/_8pxh"
+                                    android:layout_marginTop="@dimen/_3pxv"
+                                    android:layout_marginBottom="@dimen/_2pxv"
+                                    android:checked="true"
+                                    android:ellipsize="end"
+                                    android:singleLine="true"
+                                    android:text="@{loginToVitalismAppVM.loginToVitalismAppModel.txtRememberpasswo}"
+                                    tools:text="@string/msg_remember_passwo" />
+                            </LinearLayout>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtForgetpassword"
+                                style="@style/txtTrebuchetMS14_1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_36pxh"
+                                android:layout_marginTop="@dimen/_4pxv"
+                                android:layout_weight="0.39"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:text="@{loginToVitalismAppVM.loginToVitalismAppModel.txtForgetpassword}"
+                                tools:text="@string/lbl_forget_password" />
+
+
+                        </LinearLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="@dimen/_151pxh"
+                            android:layout_height="@dimen/_45pxv"
+                            android:layout_gravity="end"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_marginTop="25dp">
+
+                            <com.google.android.material.progressindicator.CircularProgressIndicator
+                                android:id="@+id/loginLoading"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:indeterminate="true"
+                                android:elevation="8dp"
+                                android:visibility="gone"
+                                app:indicatorColor="@color/blue_A400"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.5" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btnLogin"
+                                style="@style/btnSolidRounded"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:singleLine="true"
+                                android:text="@string/lbl_login"
+                                android:soundEffectsEnabled="true"
+                                android:textAllCaps="false"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.5" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/frameStackrectangleeighteen"
+                android:layout_width="match_parent"
+                android:layout_height="391dp"
+                android:layout_gravity="bottom|start"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:elevation="4dp">
+
+
+                <LinearLayout
+                    android:id="@+id/linearColumnlogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_23sdp"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:layout_marginEnd="@dimen/_24sdp"
+                    android:layout_marginBottom="@dimen/_14sdp"
+                    android:orientation="vertical">
+
+
+                    <FrameLayout
+                        android:id="@+id/frameStackrectanglefive"
+                        style="@style/groupStylewhite_2"
+                        android:layout_width="@dimen/_158pxh"
+                        android:layout_height="@dimen/_46pxv"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_36pxv"
+                        android:layout_marginEnd="@dimen/_10pxh">
+
+                        <View
+                            android:id="@+id/viewRectangleFive"
+                            android:layout_width="@dimen/_151pxh"
+                            android:layout_height="@dimen/_45pxv"
+                            android:layout_gravity="start"
+                            android:background="@drawable/rectangle_border_light_blue_700_radius_22_5" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnRegister"
+                            style="@style/btnOutlinedRounded"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top|start"
+                            android:text="@{loginToVitalismAppVM.loginToVitalismAppModel.txtRegister}"
+                            tools:text="@string/lbl_sign_up" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/txtOrconnectwith"
+                        style="@style/txtCodaregular14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_18pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@{loginToVitalismAppVM.loginToVitalismAppModel.txtOrconnectwith}"
+                        tools:text="@string/lbl_or_connect_with" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/googleBtnMaterial"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_48sdp"
+                        android:layout_marginHorizontal="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_9pxv"
+                        android:backgroundTint="@color/white"
+                        android:text="Login in Google"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/red_600"
+                        app:cornerRadius="@dimen/_8sdp"
+                        app:icon="@drawable/img_google"
+                        app:iconGravity="start"
+                        app:iconSize="@dimen/_22sdp"
+                        app:iconTint="@color/red_600"
+                        app:strokeColor="@color/red_600"
+                        app:strokeWidth="2dp" />
+
+                    <LinearLayout
+                        android:id="@+id/linearContinuewithG"
+                        style="@style/groupStylewhite_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/googleBtn"
+                            style="@style/etSolidRounded"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_11pxh"
+                            android:layout_marginEnd="@dimen/_11pxh"
+                            android:background="@drawable/rectangle_bg_white_a700_radius_10"
+                            android:drawablePadding="@dimen/_15pxh"
+                            android:ellipsize="end"
+                            android:hint="@string/msg_log_in_with_goo"
+                            android:paddingStart="@dimen/_15pxh"
+                            android:paddingTop="@dimen/_15pxv"
+                            android:paddingEnd="@dimen/_15pxh"
+                            android:paddingBottom="@dimen/_16pxv"
+                            android:singleLine="true"
+                            android:text="@={loginToVitalismAppVM.loginToVitalismAppModel.etFrameSixValue}"
+                            android:textColorHint="@color/black_900_89"
+                            app:drawableStartCompat="@drawable/drawable_img_google"
+                            tools:ignore="Autofill" />
+                    </LinearLayout>
+
+<!--                    <com.facebook.login.widget.LoginButton-->
+<!--                        android:id="@+id/login_button"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        tools:text="@string/msg_log_in_with_fac"-->
+<!--                        android:text="@{loginToVitalismAppVM.loginToVitalismAppModel.etFrameSixOneValue}"-->
+<!--                        style="@style/groupStyleblue_A400cornerRadius"-->
+<!--                        android:layout_marginHorizontal="@dimen/_8sdp"-->
+<!--                        android:layout_marginTop="@dimen/_8pxv"-->
+<!--                        android:paddingStart="@dimen/_15pxh"-->
+<!--                        android:paddingTop="@dimen/_15pxv"-->
+<!--                        android:paddingEnd="@dimen/_14pxh"-->
+<!--                        android:paddingBottom="@dimen/_16pxv"/>-->
+                    <LinearLayout
+                        android:id="@+id/linearContinuewithF"
+                        style="@style/groupStyleblue_A400cornerRadius"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/faceBookBtn"
+                            style="@style/etSolidRounded_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_1pxh"
+                            android:background="@drawable/rectangle_bg_blue_a400_radius_10"
+                            android:drawablePadding="@dimen/_15pxh"
+                            android:ellipsize="end"
+                            android:paddingStart="@dimen/_15pxh"
+                            android:paddingTop="@dimen/_15pxv"
+                            android:paddingEnd="@dimen/_14pxh"
+                            android:paddingBottom="@dimen/_16pxv"
+                            android:singleLine="true"
+                            android:text="@={loginToVitalismAppVM.loginToVitalismAppModel.etFrameSixOneValue}"
+                            android:textAllCaps="true"
+                            android:textColorHint="@color/white_A700"
+                            app:drawableStartCompat="@drawable/drawable_img_path14"
+                            tools:ignore="Autofill"
+                            tools:text="@string/msg_log_in_with_fac" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtLoginwittouch"
+                        style="@style/txtTrebuchetMS14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@{loginToVitalismAppVM.loginToVitalismAppModel.txtLoginwittouch}"
+                        tools:text="@string/msg_login_wit_touch" />
+
+                    <ImageButton
+                        android:id="@+id/btnFingerprint"
+                        android:layout_width="@dimen/_72pxh"
+                        android:layout_height="@dimen/_73pxh"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:background="@drawable/rectangle_bg_light_blue_700_border_white_a700_radius_14"
+                        android:paddingHorizontal="@dimen/_8pxh"
+                        android:paddingVertical="@dimen/_8pxv"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_fingerprint"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+
+    <!--    <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        android:gravity="start"-->
+<!--        style="@style/groupStyle"-->
+<!--        tools:context=".Models.StartActivity.ui.fragments.LoginFragment">-->
+
+
+<!--        &lt;!&ndash;    <androidx.appcompat.widget.AppCompatImageView&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--        &lt;!&ndash;        android:layout_height="@dimen/_300sdp"/>&ndash;&gt;-->
+
+<!--    </androidx.appcompat.widget.LinearLayoutCompat>-->
+</layout>

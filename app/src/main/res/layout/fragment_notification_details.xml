@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_50"
+        tools:context=".models.notification.ui.NotificationDetailsFragment">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_24"
+            app:navigationIconTint="@color/blue_A200"
+            app:title="Connect Request"
+            app:titleTextColor="@color/blue_A200" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayoutCompat3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:id="@+id/userImg"
+                android:transitionName="userImg_big"
+                tools:src="@drawable/app_logo" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/UserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotoregular"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold"
+                    android:transitionName="name_full"
+                    tools:text="Moataz kayad hamdy" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/UserEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="1dp"
+                    android:textSize="@dimen/_10ssp"
+                    tools:text="Moataz.Noaman12@gmail.com" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat3">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_12sdp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                android:textColor="@color/blue_A200"
+                android:textStyle="bold"
+                tools:text="Message" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/Message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold"
+                tools:text="Hello my Friend My name is Moataz Kayad Hamdy and i'd like to be a friend with you" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:id="@+id/acceptBtn"
+            android:text="Accpet"
+            app:backgroundTint="@color/blue_A200"
+            app:cornerRadius="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.7" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/rejectBtn"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:text="reject"
+            app:backgroundTint="@color/red_600"
+            app:cornerRadius="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/acceptBtn"
+            app:layout_constraintTop_toBottomOf="@+id/acceptBtn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/acceptBtn"
+            app:layout_constraintVertical_bias="0.02" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

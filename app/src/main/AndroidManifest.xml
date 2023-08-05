@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Ask for permission to use camera -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Ask for permission to use internet -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Declare which features this app uses -->
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.front.autofocus"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission
+        android:name="com.google.android.gms.permission.AD_ID"
+        tools:node="remove" />
+
+    <application
+        android:name=".component.di.MyApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_application_icon_full_sizes_foreground"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_application_icon_full_sizes_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LiveNativeRPPG"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="33">
+        <activity
+            android:name=".models.Chat.ui.ChatActivity"
+            android:exported="false"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".models.resultPage.ui.ResultMeasurementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".models.faceDetectYNCreated.ui.FeceDetectorYNCreatedActivity"
+            android:exported="false"
+            android:hardwareAccelerated="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".models.heartRateProcessing.ui.HeartRateProcessingRPPGFragment"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".models.heartRateProcessing.ui.HeartRateProcessingPPGActivity"
+            android:exported="false"
+            android:hardwareAccelerated="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY" />
+
+        <activity
+            android:name=".models.mainAppPage.ui.MainAppPageActivity"
+            android:exported="false"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".models.startActivity.ui.StartActivity"
+            android:exported="true"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.LiveNativeRPPG.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".models.cameraActivtiy.view.CameraActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".models.mainRun.vw.MainActivity"
+            android:exported="true"
+            android:hardwareAccelerated="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name=".component.base.FirebaseNotificationServices"
+            android:directBootAware="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.firebase.messaging.default_notification_icon"
+                android:resource="@drawable/app_logo" />
+            <!--
+                 Set color used with incoming notification messages. This is used when no color is set for the incoming
+                 notification message. See README(https://goo.gl/6BKBk7) for more.
+            -->
+            <meta-data
+                android:name="com.google.firebase.messaging.default_notification_color"
+                android:resource="@color/blue_A400" />
+        </service>
+
+        <receiver android:name=".component.base.AcceptBroadCast" />
+    </application>
+
+</manifest>

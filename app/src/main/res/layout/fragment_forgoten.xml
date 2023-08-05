@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="forgotPasswordVM"
+            type="com.example.livenativerppg.models.frogotenPassword.data.viewModel.ForgotPasswordVM" />
+    </data>
+
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnleftside"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <FrameLayout android:id="@+id/frameStackellipse674"
+            android:layout_height="@dimen/_44pxv"
+            android:layout_marginEnd="@dimen/_10pxh" android:layout_width="@dimen/_50pxh">
+            <View
+                android:background="@drawable/rectangle_bg_gray_100_radius_25_285"
+                android:id="@+id/viewEllipse674"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_44pxv" android:layout_width="@dimen/_50pxh"/>
+            <ImageView android:id="@+id/imageArrowleft"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_11pxh"
+                android:layout_marginBottom="@dimen/_16pxv"
+                android:layout_marginEnd="@dimen/_22pxh"
+                android:layout_marginStart="@dimen/_22pxh"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:layout_width="@dimen/_6pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_arrowleft"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearForgotPassword"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_308pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_22pxh"
+            android:layout_marginTop="@dimen/_13pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+
+            <ImageView android:id="@+id/imageRectangleNineteen"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_112pxh"
+                android:layout_marginEnd="@dimen/_66pxh"
+                android:layout_marginStart="@dimen/_67pxh"
+                android:layout_marginTop="@dimen/_78pxv"
+                android:layout_width="@dimen/_252pxh"
+                android:scaleType="fitXY"
+                cornerRadius="@{@dimen/_33pxh}"
+                imageRes="@{@drawable/img_rectangle19}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle19"/>
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtForgotpassword"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_67pxh"
+                android:layout_marginStart="@dimen/_67pxh"
+                android:layout_marginTop="@dimen/_41pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@string/lbl_forget_password"
+                style="@style/txtArialboldmt26" tools:text="@string/lbl_forgot_password"/>
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtLanguage"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_67pxh"
+                android:layout_marginStart="@dimen/_67pxh"
+                android:layout_marginTop="@dimen/_15pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:text="@string/msg_enter_your_emai"
+                style="@style/txtAbelregular16_1" tools:text="@string/msg_enter_your_emai"/>
+            <EditText
+                android:background="@drawable/rectangle_bg_gray_100_radius_14"
+                android:ellipsize="end"
+                android:hint="@string/msg_mahmoudalyosify"
+                android:id="@+id/etEmail"
+                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:paddingBottom="@dimen/_18pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_18pxh"
+                android:paddingTop="@dimen/_21pxv"
+                android:singleLine="true"
+                android:text="@={forgotPasswordVM.forgotPasswordModel.etEmailValue}"
+                android:textColorHint="@color/gray_900"
+                style="@style/etSolidRounded_3" tools:ignore="Autofill"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnResetPassword"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:paddingBottom="@dimen/_20pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_20pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_reset_password"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_1" tools:text="@string/lbl_reset_password"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

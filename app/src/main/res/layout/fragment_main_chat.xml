@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_8sdp"
+        android:paddingVertical="@dimen/_6sdp"
+        tools:context=".models.MainChatInterface.ui.MainChatFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="0.9">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chatMsgListRecycleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:itemCount="80"
+                android:paddingVertical="4dp"
+                app:stackFromEnd="true"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5" />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="wrap_content"
+                android:id="@+id/errorLayout"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5" >
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_52sdp"
+                    tools:src="@drawable/ic_messages"
+                    app:tint="@color/bluegray_200"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ErrorText"
+                    tools:text="no past messages"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:textColor="@color/bluegray_200"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="@dimen/_4sdp"
+            android:gravity="center_vertical"
+            android:layout_weight="0.1">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/msgInputTextInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxCornerRadiusBottomEnd="@dimen/_15sdp"
+                app:boxCornerRadiusTopStart="@dimen/_15sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_15sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_15sdp"
+                app:boxStrokeWidth="0dp"
+                app:boxBackgroundColor="@color/blue_A400"
+                android:elevation="8dp"
+                android:hint="Type some words"
+                app:hintEnabled="true"
+                android:textColorHint="@color/white_A700"
+                app:hintTextColor="@color/white_A700"
+                app:hintAnimationEnabled="true"
+                app:endIconMode="custom"
+                app:endIconDrawable="@drawable/outgoing_mail"
+                app:endIconCheckable="true"
+                app:endIconTint="@color/white_A700"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white_A700"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_180sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/_20sdp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="8dp"
+    android:background="@drawable/rectangle_bg_white_a700_radius_23">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        app:srcCompat="@drawable/img_user"
+        android:padding="10dp"
+        android:background="@drawable/rectangle_bg_blue_a401_radius_25_25" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/_1pxh"
+        android:singleLine="true"
+        android:layout_margin="4dp"
+        style="@style/txtArialboldmt18_1"
+        android:text="@string/msg_check_your_emai"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/subTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:lineSpacingExtra="@dimen/_4pxh"
+        android:layout_marginBottom="@dimen/_20pxv"
+        android:layout_marginEnd="@dimen/_48pxh"
+        android:layout_marginStart="@dimen/_48pxh"
+        android:layout_marginTop="@dimen/_18pxv"
+        android:text="@string/msg_we_have_send_pa"
+        style="@style/txtAbelregular16_1"
+        tools:text="@string/msg_we_have_send_pa"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

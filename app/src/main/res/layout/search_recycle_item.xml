@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/frameStackrectangle837"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="wrap_content">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="@dimen/_16sdp"
+            app:cardElevation="4dp"
+            android:layout_margin="8dp">
+            <LinearLayout
+                android:id="@+id/linearColumnrectangle839"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="center_horizontal"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/userImageView"
+                    cornerRadius="@{@dimen/_16pxh}"
+                    android:layout_width="@dimen/_115sdp"
+                    android:layout_height="@dimen/_115sdp"
+                    android:layout_gravity="start"
+                    android:scaleType="fitXY"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_rectangle839_123x146" />
+
+                <TextView
+                    android:id="@+id/userName"
+                    style="@style/txtArialboldmt14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20pxh"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_20pxh"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:letterSpacing="0.03"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    tools:text="@string/lbl_moataz_kayed" />
+
+                <TextView
+                    android:id="@+id/userCountry"
+                    style="@style/txtAbelregular12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/_51pxh"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_marginEnd="@dimen/_51pxh"
+                    android:ellipsize="end"
+                    android:letterSpacing="0.02"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    tools:text="@string/lbl_assiut" />
+
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

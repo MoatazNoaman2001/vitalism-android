@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".models.resultPage.ui.ResultMeasurementActivity">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat2"
+        style="@style/groupStylecornerRadius_8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_290sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_24"
+        app:navigationIconTint="@color/black_900" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayoutCompat2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayoutCompat2">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/FullResultCheckImage"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_checkmark_66x66"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_checkmark_66x66" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/resultTextView"
+            style="@style/txtLatobold36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_18sdp"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:text=""
+            android:textAlignment="center"
+            tools:text="your heart rate is 79 bpm " />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        app:cardCornerRadius="@dimen/_28sdp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59000003">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_75sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:src="@drawable/img_rectangle19" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginHorizontal="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@color/gray_300" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/resultRecycleView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180sdp"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/result_measurment_recycle_item" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginHorizontal="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@color/gray_300" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/vitalSignTextCondition"
+                    style="@style/txtMulishmuliregular16_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_6pxv"
+                    android:layout_weight="0.92"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    android:text="@{resultVM.resultModel.txtRespiratoryrat}"
+                    android:textAllCaps="true"
+                    tools:text="@string/msg_respiratory_rat2" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ConditionIcon"
+                    android:layout_width="@dimen/_20pxh"
+                    android:layout_height="@dimen/_20pxh"
+                    android:layout_marginStart="@dimen/_96pxh"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/img_checkmark_66x66"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_checkmark_66x66" />
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/emrBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:background="@color/blue_A200"
+        android:text="@string/lbl_add_to_emr"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        app:cornerRadius="@dimen/_14sdp"
+        app:icon="@drawable/img_arrowright"
+        app:iconGravity="end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

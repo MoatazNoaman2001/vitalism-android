@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable name="verificationVM" type="com.example.livenativerppg.models.startActivity.ui.fragments.verification.data.viewmodel.VerificationVM"/>
+    </data>
+
+    <LinearLayout android:id="@+id/linearColumnleftside"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <!--        <androidx.appcompat.widget.Toolbar android:gravity="start"-->
+        <!--            android:id="@+id/toolbarToolbar"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_width="match_parent" app:contentInsetStart="0dp">-->
+        <!--            <LinearLayout android:id="@+id/linearIPhoneXorne"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:orientation="horizontal" style="@style/groupStylewhite_A700">-->
+        <!--                <ImageView android:id="@+id/imageLeftSide"-->
+        <!--                    android:layout_height="@dimen/_21pxh"-->
+        <!--                    android:layout_marginBottom="@dimen/_11pxv"-->
+        <!--                    android:layout_marginStart="@dimen/_21pxh"-->
+        <!--                    android:layout_marginTop="@dimen/_12pxv"-->
+        <!--                    android:layout_width="@dimen/_54pxh"-->
+        <!--                    android:scaleType="fitXY"-->
+        <!--                    android:src="@drawable/img_leftside"-->
+        <!--                    tools:ignore="ContentDescription" tools:src="@drawable/img_leftside"/>-->
+        <!--                <ImageView android:id="@+id/imageRightSide"-->
+        <!--                    android:layout_height="@dimen/_11pxh"-->
+        <!--                    android:layout_marginBottom="@dimen/_15pxv"-->
+        <!--                    android:layout_marginEnd="@dimen/_14pxh"-->
+        <!--                    android:layout_marginStart="@dimen/_261pxh"-->
+        <!--                    android:layout_marginTop="@dimen/_17pxv"-->
+        <!--                    android:layout_width="@dimen/_66pxh"-->
+        <!--                    android:scaleType="fitXY"-->
+        <!--                    android:src="@drawable/img_rightside_11x66"-->
+        <!--                    tools:ignore="ContentDescription" tools:src="@drawable/img_rightside_11x66"/>-->
+        <!--            </LinearLayout>-->
+        <!--        </androidx.appcompat.widget.Toolbar>-->
+        <LinearLayout android:id="@+id/linearVerification"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_16pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <ImageButton
+                android:background="@drawable/rectangle_bg_gray_100_radius_25_29"
+                android:id="@+id/btnArrowleft"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_50pxh"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="@dimen/_50pxh"
+                android:paddingHorizontal="@dimen/_18pxh"
+                android:paddingVertical="@dimen/_18pxv"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_arrowleft" tools:ignore="ContentDescription"/>
+            <ImageView android:id="@+id/imageRectangleNineteen"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_112pxh"
+                android:layout_marginEnd="@dimen/_15pxh"
+                android:layout_marginStart="@dimen/_15pxh"
+                android:layout_marginTop="@dimen/_74pxv"
+                android:layout_width="@dimen/_252pxh"
+                android:scaleType="fitXY"
+                cornerRadius="@{@dimen/_33pxh}"
+                imageRes="@{@drawable/img_rectangle19}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle19"/>
+            <TextView android:ellipsize="end" android:gravity="end"
+                android:id="@+id/txtOTPVerificatio"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_78pxh"
+                android:layout_marginStart="@dimen/_78pxh"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{verificationVM.verificationModel.txtOTPVerificatio}"
+                style="@style/txtArialboldmt26" tools:text="@string/msg_otp_verificatio"/>
+            <TextView android:ellipsize="end" android:gravity="end"
+                android:id="@+id/txtPleasecheckyo"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_3pxh"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_marginTop="@dimen/_26pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{verificationVM.verificationModel.txtPleasecheckyo}"
+                style="@style/txtAbelregular16_1" tools:text="@string/msg_please_check_yo"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnotpcode"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15pxh"
+                android:layout_marginTop="@dimen/_60pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtOTPCode"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    android:text="@{verificationVM.verificationModel.txtOTPCode}"
+                    style="@style/txtArialboldmt20" tools:text="@string/lbl_otp_code"/>
+                <com.mukesh.OtpView
+                    android:focusableInTouchMode="true"
+                    android:id="@+id/otpViewOtpview"
+                    android:inputType="number"
+                    android:itemBackground="@color/gray_100"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_26pxv"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/gray_900"
+                    android:textSize="@dimen/_18pxh"
+                    app:OtpItemCount="4"
+                    app:OtpItemHeight="@dimen/_64pxv"
+                    app:OtpItemSpacing="@dimen/_19pxh"
+                    app:OtpItemWidth="@dimen/_74pxh"
+                    app:OtpLineColor="@android:color/transparent" app:OtpViewType="rectangle"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnverify"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15pxh"
+                android:layout_marginTop="@dimen/_45pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius_3">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnVerify"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:paddingBottom="@dimen/_24pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_24pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_verify"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded_1" tools:text="@string/lbl_verify"/>
+                <LinearLayout android:id="@+id/linearRowresendcodeto"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_marginTop="@dimen/_19pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtResendcodeto"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_weight="0.73"
+                        android:layout_width="0dp"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="@{verificationVM.verificationModel.txtResendcodeto}"
+                        style="@style/txtAbelregular14_1" tools:text="@string/lbl_resend_code_to"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTime"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_marginStart="@dimen/_242pxh"
+                        android:layout_weight="0.27"
+                        android:layout_width="0dp"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="@{verificationVM.verificationModel.txtTime}"
+                        style="@style/txtAbelregular14_1" tools:text="@string/lbl_01_26"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

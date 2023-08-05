@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".models.startActivity.profilePicSelection.ui.ProfilePicSelectFragment">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/nextBtn"
+            style="@style/btnSolidRounded_3"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.312"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.951" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/uploadBtn"
+            style="@style/btnSolidRounded_3"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="wrap_content"
+            android:text="Upload Image"
+            app:backgroundTint="@color/light_blue_700"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.54"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.562" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/skipBtn"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/skip"
+            app:layout_constraintBottom_toBottomOf="@+id/nextBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.786"
+            app:layout_constraintStart_toEndOf="@+id/nextBtn"
+            app:layout_constraintTop_toTopOf="@+id/nextBtn"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="@dimen/_160sdp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/nextBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.179"
+            app:srcCompat="@drawable/patient"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+            tools:srcCompat="@drawable/patient" />
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/circularProgressIndicator"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="@dimen/_160sdp"
+            android:progress="2"
+            app:indicatorColor="@color/light_blue_700"
+            app:indicatorDirectionCircular="clockwise"
+            app:indicatorInset="@dimen/_80sdp"
+            app:indicatorSize="@dimen/_160sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:trackCornerRadius="4dp"
+            app:trackThickness="6dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/TitleTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/interbold"
+            android:text="@string/help_us_to_know_u"
+            android:textColor="@color/blue_A200"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintBottom_toTopOf="@+id/appCompatButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.023" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_24sdp"
+            android:fontFamily="@font/inter"
+            android:text="please if you like upload an image for you to help us identify you in the future"
+            android:textAlignment="center"
+            android:textColor="@color/blue_A200"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintBottom_toTopOf="@+id/uploadBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TitleTxtView"
+            app:layout_constraintVertical_bias="0.113" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

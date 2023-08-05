@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_height="@dimen/_48sdp">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:id="@+id/profileImg"
+        tools:src="@mipmap/heart_icon"
+        android:layout_marginStart="@dimen/_14sdp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginHorizontal="@dimen/_8sdp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/intersemibold"
+            tools:text="Moataz"
+            android:id="@+id/UserName"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            tools:text="Moataz.noaman12@gmail.com"
+            android:id="@+id/UserEmail"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

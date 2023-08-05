@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.livenativerppg.models.startActivity.ui.fragments.startFragment.ui.StartFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment"
+            app:enterAnim="@anim/slide_left"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_right" />
+        <action
+            android:id="@+id/action_FirstFragment_to_pagerStartInstructionFragment"
+            app:destination="@id/pagerStartInstructionFragment"
+            app:enterAnim="@anim/slide_left"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_left_inverse"/>
+        <action
+            android:id="@+id/action_FirstFragment_to_userTypeSelectionFragment"
+            app:destination="@id/userTypeSelectionFragment"
+            app:enterAnim="@anim/slide_left"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_left_inverse"/>
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.livenativerppg.models.startActivity.ui.fragments.LoginFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:enterAnim="@anim/slide_left"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_left_inverse" />
+        <action
+            android:id="@+id/action_SecondFragment_to_verificationFragment"
+            app:destination="@id/verificationFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_forgotenFragment"
+            app:destination="@id/forgotenFragment"
+            app:enterAnim="@anim/slide_left"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_left_inverse"/>
+        <action
+            android:id="@+id/action_SecondFragment_to_pagerStartInstructionFragment"
+            app:destination="@id/pagerStartInstructionFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_profilePicSelectFragment"
+            app:destination="@id/profilePicSelectFragment"
+            app:enterAnim="@anim/slide_left"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_right"/>
+        <action
+            android:id="@+id/action_SecondFragment_to_userTypeSelectionFragment"
+            app:destination="@id/userTypeSelectionFragment"
+            app:enterAnim="@anim/slide_left"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_left_inverse" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.livenativerppg.models.startActivity.ui.fragments.signUpFragment.ui.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_verificationFragment"
+            app:destination="@id/verificationFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_profilePicSelectFragment"
+            app:destination="@id/profilePicSelectFragment"
+            app:enterAnim="@anim/slide_left"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/verificationFragment"
+        android:name="com.example.livenativerppg.models.startActivity.ui.fragments.verification.ui.VerificationFragment"
+        android:label="fragment_verification"
+        tools:layout="@layout/fragment_verification" />
+    <fragment
+        android:id="@+id/forgotenFragment"
+        android:name="com.example.livenativerppg.models.frogotenPassword.ui.ForgotenFragment"
+        android:label="ForgotenFragment" />
+    <fragment
+        android:id="@+id/pagerStartInstructionFragment"
+        android:name="com.example.livenativerppg.models.pagerStartInstruction.ui.PagerStartInstructionFragment"
+        android:label="fragment_pager_start_instruction"
+        tools:layout="@layout/fragment_pager_start_instruction" />
+    <fragment
+        android:id="@+id/profilePicSelectFragment"
+        android:name="com.example.livenativerppg.models.startActivity.profilePicSelection.ui.ProfilePicSelectFragment"
+        android:label="fragment_profile_pic_select"
+        tools:layout="@layout/fragment_profile_pic_select" >
+        <action
+            android:id="@+id/action_profilePicSelectFragment_to_pagerStartInstructionFragment"
+            app:destination="@id/pagerStartInstructionFragment" />
+        <action
+            android:id="@+id/action_profilePicSelectFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.livenativerppg.models.goeLocationDetect.ui.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
+    <fragment
+        android:id="@+id/essentialsFragment"
+        android:name="com.example.livenativerppg.models.startActivity.ui.fragments.essitionals.ui.EssentialsFragment"
+        android:label="EssentialsFragment" >
+        <action
+            android:id="@+id/action_essentialsFragment_to_profilePicSelectFragment"
+            app:destination="@id/profilePicSelectFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userTypeSelectionFragment"
+        android:name="com.example.livenativerppg.models.startActivity.ui.fragments.UserTypeSelector.ui.UserTypeSelectionFragment"
+        android:label="UserTypeSelectionFragment" >
+        <action
+            android:id="@+id/action_userTypeSelectionFragment_to_essentialsFragment"
+            app:destination="@id/essentialsFragment"
+            app:enterAnim="@anim/slide_left"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_right"/>
+        <action
+            android:id="@+id/action_userTypeSelectionFragment_to_medicalInfoTypeFragment"
+            app:destination="@id/medicalInfoTypeFragment"
+            app:enterAnim="@anim/slide_left"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/medicalInfoTypeFragment"
+        android:name="com.example.livenativerppg.models.startActivity.ui.fragments.essitionals.ui.MedicalInfoTypeFragment"
+        android:label="MedicalInfoTypeFragment" >
+        <action
+            android:id="@+id/action_medicalInfoTypeFragment_to_profilePicSelectFragment"
+            app:destination="@id/profilePicSelectFragment"
+            app:enterAnim="@anim/slide_left"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/slide_right"/>
+    </fragment>
+</navigation>

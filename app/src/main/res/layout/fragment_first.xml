@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="StartFragmentViewModel"
+            type="com.example.livenativerppg.models.startActivity.ui.fragments.startFragment.data.viewModel.StartFragmentViewModel" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/rootlayout"
+        android:gravity="center"
+        android:background="#E6E6E6"
+        tools:context=".models.startActivity.ui.fragments.startFragment.ui.StartFragment">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/logo"
+            android:transitionName="Vitalism_logo_small"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:src="@drawable/img_rectangle19" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

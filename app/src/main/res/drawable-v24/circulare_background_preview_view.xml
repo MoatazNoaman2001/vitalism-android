@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Larger blue circle in back -->
+    <item>
+        <shape android:shape="ring"
+            android:useLevel="false"
+            android:innerRadius="170dp"
+            android:innerRadiusRatio="2"
+            android:thickness="990dp"
+            android:tint="#732F2F2F">
+            <stroke android:color="#73717171" android:width="2dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape
+            android:shape="ring"
+            android:innerRadius="1dp"
+            android:innerRadiusRatio="8"
+            android:thickness="1dp"
+            android:useLevel="false">
+            <stroke
+                android:width="340dp"
+                android:color="@android:color/darker_gray" />
+        </shape>
+    </item>
+
+</layer-list>

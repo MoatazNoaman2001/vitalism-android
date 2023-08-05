@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="ScheduleVM"
+            type="com.example.livenativerppg.models.schedule.data.viewmodel.ScheduleVM" />
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".models.schedule.ui.SchedulesFragment">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:id="@+id/schedulerToolbar"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_24"
+            app:navigationIconTint="@color/black_900"
+            app:title="@{ScheduleVM.scheduleModel.txtYourMedication}"
+            app:menu="@menu/schedule_menu"
+            app:titleCentered="true"
+            app:titleTextAppearance="@style/txtArialboldmt18"
+            tools:title="@string/msg_your_medication">
+
+<!--            <FrameLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="end"-->
+<!--                android:layout_margin="4dp">-->
+
+<!--                <View-->
+<!--                    android:id="@+id/viewEllipse674One"-->
+<!--                    android:layout_width="@dimen/_48pxh"-->
+<!--                    android:layout_height="@dimen/_47pxh"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:background="@drawable/rectangle_bg_gray_100_radius_23_72" />-->
+
+<!--                <androidx.appcompat.widget.AppCompatImageView-->
+<!--                    android:layout_width="@dimen/_35sdp"-->
+<!--                    android:layout_height="@dimen/_35sdp"-->
+<!--                    android:layout_gravity="end"-->
+<!--                    android:layout_weight="0.1"-->
+<!--                    android:padding="8dp"-->
+<!--                    app:srcCompat="@drawable/img_checkmark_24x20"-->
+<!--                    app:tint="@color/black_900" />-->
+
+<!--                <View-->
+<!--                    android:id="@+id/viewEllipse709"-->
+<!--                    android:layout_width="@dimen/_9pxh"-->
+<!--                    android:layout_height="@dimen/_10pxh"-->
+<!--                    android:layout_gravity="top|end"-->
+<!--                    android:layout_marginStart="@dimen/_13pxh"-->
+<!--                    android:layout_marginTop="@dimen/_13pxv"-->
+<!--                    android:layout_marginEnd="@dimen/_13pxh"-->
+<!--                    android:layout_marginBottom="@dimen/_10pxv"-->
+<!--                    android:background="@drawable/rectangle_bg_red_600_radius_4" />-->
+
+<!--            </FrameLayout>-->
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+
+        <ImageView
+            android:id="@+id/imageRectangleNineteen"
+            imageRes="@{@drawable/img_rectangle19}"
+            android:layout_width="@dimen/_202pxh"
+            android:layout_height="@dimen/_108pxh"
+            android:layout_gravity="top|center"
+            android:layout_marginStart="@dimen/_99pxh"
+            android:layout_marginTop="@dimen/_7pxv"
+            android:layout_marginEnd="@dimen/_99pxh"
+            android:layout_marginBottom="@dimen/_12pxh"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_rectangle19" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp"
+            app:cardElevation="4dp"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            app:cardCornerRadius="@dimen/_16sdp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/currentDateTextView"
+                        style="@style/txtArialboldmt20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        tools:text="@string/lbl_17_november" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/dayForwordAndBackwordLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_180pxh"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_marginEnd="@dimen/_11pxh"
+                        android:layout_marginBottom="@dimen/_8pxv"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/arrawleft_DayBackword"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:padding="8dp"
+                            app:srcCompat="@drawable/img_arrowleft" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/arrawRight_DayForWord"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:padding="8dp"
+                            app:srcCompat="@drawable/img_arrowright"
+                            app:tint="@color/black_900" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <com.michalsvec.singlerowcalendar.calendar.SingleRowCalendar
+                    android:id="@+id/main_single_row_calendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:deselection="false"
+                    app:longPress="false"
+                    app:multiSelection="false" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:text="Measured Vital signs"
+            android:id="@+id/measuredVitalSignsTextView"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            tools:listitem="@layout/emr_search_recycle_view_item"
+            tools:itemCount="12" />
+        <LinearLayout
+            android:id="@+id/linearRowmyschedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtMySchedule"
+                style="@style/txtArialboldmt20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{ScheduleVM.scheduleModel.txtMySchedule}"
+                tools:text="@string/lbl_my_schedule" />
+
+            <TextView
+                android:id="@+id/txtViewall"
+                style="@style/txtAbelregular14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_237pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_marginBottom="@dimen/_4pxv"
+                android:layout_weight="0.25"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{ScheduleVM.scheduleModel.txtViewall}"
+                tools:text="@string/lbl_view_all" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/schedulRecycleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/medicine_list_item"
+            tools:itemCount="12" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
